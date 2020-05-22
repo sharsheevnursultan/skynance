@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Оферта на заключение договора займа</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="preloader">
+    <div id="preloader_preload"></div>
+</div>
+<script type="text/javascript">
+    let preloader = document.getElementById("preloader_preload");
+
+    function fadeOutnojquery(el) {
+        el.style.opacity = 1;
+        let interpreloader = setInterval(function () {
+            el.style.opacity = el.style.opacity - 0.05;
+            if (el.style.opacity <= 0.05) {
+                clearInterval(interpreloader);
+                preloader.style.display = "none";
+            }
+        }, 16);
+    }
+
+    window.onload = function () {
+        setTimeout(function () {
+            fadeOutnojquery(preloader);
+        }, 100);
+    };
+</script>
+<div class="container">
+    <div class="d-flex w-100">
+        <img class="logo" src="../images/logo/logo.png" alt="skynance">
+    </div>
+    <div>
+        <iframe class="my_doc"
+                src="https://docs.google.com/document/d/e/2PACX-1vRRmYfYtJYhu2PVSKxnWMS8IAS0H6ZB3axv3EzHsauCoZ4sKEqJKYuoSPA8rE1paGtE_Xw3SVzSlU1c/pub?embedded=true">
+        </iframe>
+    </div>
+</div>
+</body>
+</html>

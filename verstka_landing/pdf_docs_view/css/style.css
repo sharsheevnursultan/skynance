@@ -1,0 +1,32 @@
+body {
+    background: #00A0E3;
+}
+
+.my_doc {
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    border: 0;
+    border-radius: 10px;
+}
+
+.logo {
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    width: 150px;
+    margin: 20px auto;
+}
+
+#preloader_preload {
+    text-align: center;
+    display: block;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF url('../../images/loader.svg') center center no-repeat;
+    background-size: 160px;
+}

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+<!--    <link rel="stylesheet" href="fullPage.js-master/dist/fullpage.min.css">-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Skynance</title>
+</head>
+
+<body>
+<div id="preloader">
+    <div id="preloader_preload"></div>
+</div>
+<script type="text/javascript">
+    let preloader = document.getElementById("preloader_preload");
+
+    function fadeOutnojquery(el) {
+        el.style.opacity = 1;
+        let interpreloader = setInterval(function () {
+            el.style.opacity = el.style.opacity - 0.05;
+            if (el.style.opacity <= 0.05) {
+                clearInterval(interpreloader);
+                preloader.style.display = "none";
+            }
+        }, 16);
+    }
+
+    window.onload = function () {
+        setTimeout(function () {
+            fadeOutnojquery(preloader);
+        }, 100);
+    };
+</script>
+<main class="page">
+    <header class="header">
+        <div class="container-c">
+            <div class="header__body ">
+                <div class="header__content text-center col-12 col-md-6">
+                    <div class="header__logo">
+                        <img src="./images/logo/logo.png" alt="">
+                    </div>
+                    <div class="header__img">
+                        <img class="w-100 animate__animated animate__fadeIn" src="./images/slides/slide1.png" alt="">
+                    </div>
+                </div>
+                <div class="header__info col-12 col-md-6">
+                    <h2 class="header__title animate__animated animate__fadeIn">Выгодно</h2>
+                    <div class="header__desc animate__animated animate__fadeIn">поможем получить кредит по максимально выгодной процентной ставке!
+                    </div>
+                    <div class="header__control ">
+                        <span class="header__line mr-3 active"></span>
+                        <span class="header__line mr-3"></span>
+                        <span class="header__line mr-3"></span>
+                        <span class="header__line "></span>
+                    </div>
+                </div>
+            </div>
+            <div class="header__body ">
+                <div class="header__content text-center col-12 col-md-6">
+                    <div class="header__logo">
+                        <img src="./images/logo/logo.png" alt="">
+                    </div>
+                    <div class="header__img">
+                        <img class="w-100 animate__animated animate__fadeIn" src="./images/slides/slide2.png" alt="">
+                    </div>
+                </div>
+                <div class="header__info col-12 col-md-6">
+                    <h2 class="header__title animate__animated animate__fadeIn">Надежно</h2>
+                    <div class="header__desc animate__animated animate__fadeIn">нет необходимости искать знакомых в банках!
+                    </div>
+                    <div class="header__control ">
+                        <span class="header__line mr-3"></span>
+                        <span class="header__line mr-3 active"></span>
+                        <span class="header__line mr-3"></span>
+                        <span class="header__line "></span>
+                    </div>
+                </div>
+            </div>
+            <div class="header__body ">
+                <div class="header__content text-center col-12 col-md-6">
+                    <div class="header__logo">
+                        <img src="./images/logo/logo.png" alt="">
+                    </div>
+                    <div class="header__img">
+                        <img class="w-100 animate__animated animate__fadeIn" src="./images/slides/slide3.png" alt="">
+                    </div>
+                </div>
+                <div class="header__info col-12 col-md-6">
+                    <h2 class="header__title animate__animated animate__fadeIn">Быстро</h2>
+                    <div class="header__desc animate__animated animate__fadeIn">заявки рассмотрим в течение нескольких дней!
+                    </div>
+                    <div class="header__control ">
+                        <span class="header__line mr-3"></span>
+                        <span class="header__line mr-3"></span>
+                        <span class="header__line mr-3 active"></span>
+                        <span class="header__line "></span>
+                    </div>
+                </div>
+            </div>
+            <div class="header__body ">
+                <div class="header__content text-center col-12 col-md-6">
+                    <div class="header__logo">
+                        <img src="./images/logo/logo.png" alt="">
+                    </div>
+                    <div class="header__img">
+                        <img class="w-100 animate__animated animate__fadeIn" src="./images/slides/slide4.png" alt="">
+                    </div>
+                </div>
+                <div class="header__info col-12 col-md-6">
+                    <h2 class="header__title animate__animated animate__fadeIn">Конфиденциально</h2>
+                    <div class="header__desc animate__animated animate__fadeIn">вся информация о вас хранится строго конфиденциально.
+                    </div>
+                    <div class="header__control ">
+                        <span class="header__line mr-3"></span>
+                        <span class="header__line mr-3"></span>
+                        <span class="header__line mr-3"></span>
+                        <span class="header__line active "></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <menu>
+        <div class="menu">
+            <div class="container-c">
+                <nav class="nav d-flex justify-content-between align-items-center">
+                    <div class="nav__logo">
+                        <a href="./index.html"><img src="./images/logo/logo.png" alt=""></a>
+                    </div>
+                    <ul class="nav__list d-flex">
+                        <li class="nav__link mr-5"><a href="./auction/auction.html">Кредитный аукцион</a></li>
+                        <li class="nav__link mr-5"><a href="./credit/credit.html">Как участвовать</a></li>
+                        <li class="nav__link mr-5"><a href="./document/document.html">Документы</a></li>
+                        <li class="nav__link mr-5"><a href="./question/question.html">Вопросы и Ответы</a></li>
+                        <li class="nav__link"><a href="./partner/partner.html">Партнерам</a></li>
+                    </ul>
+                    <a href="./login/login.html" class="nav__btn">Войти</a>
+                    <div class="burger">
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </menu>
+
+    <div class="bg">
+        <section class="who">
+            <div class="container-c">
+                <div class="row align-items-center">
+                    <div class="who__info col-12 col-lg-6 text-center text-lg-left">
+                        <h2 class="who__title">Как это работает?</h2>
+                        <p class="who__desc">Легко и быстро</p>
+                    </div>
+
+                    <div class="who__content text-center col-12 col-lg-6 ">
+                        <div class="who__video mx-auto">
+                            <div class="who__logo">
+                                <img src="./images/logo/logo.png" alt="">
+                            </div>
+                            <div class="who__play">
+                                <img src="./images/control/cirkule.png" alt="">
+                            </div>
+                            <p class="who__text">Посмотрите обучающее видео</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stage">
+            <div class="container-c">
+                <h2 class="stage__title text-center title">Этапы <span class="title-blue">работы</span></h2>
+                <div class="stage__list row justify-content-between">
+                    <div class="stage__item text-center mb-4 mx-auto">
+                        <div class="stage__img d-flex align-items-center justify-content-center">
+                            <img src="./images/work/work.png" alt="">
+                        </div>
+                        <p class="stage__text">Регистрация</p>
+                    </div>
+                    <div class="stage__item text-center mb-4 mx-auto">
+                        <div class="stage__img d-flex align-items-center justify-content-center">
+                            <img src="./images/work/work2.png" alt="">
+                        </div>
+                        <p class="stage__text">Заявка</p>
+                    </div>
+                    <div class="stage__item text-center mb-4 mx-auto">
+                        <div class="stage__img d-flex align-items-center justify-content-center">
+                            <img src="./images/work/work3.png" alt="">
+                        </div>
+                        <p class="stage__text">Участие в аукционе</p>
+                    </div>
+                    <div class="stage__item text-center mb-4 mx-auto">
+                        <div class="stage__img d-flex align-items-center justify-content-center">
+                            <img src="./images/work/work4.png" alt="">
+                        </div>
+                        <p class="stage__text">Сделка</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="why">
+            <div class="container-c">
+                <h2 class="why__title text-center title">Почему <span class="title-blue">Skynance</span></h2>
+                <div class="why__list row justify-content-between">
+                    <div class="why__item text-center mb-5">
+                        <p class="why__text">С нами вы имеете реальный шанс получить кредит максимально
+                            выгодно.</p>
+                        <div class="why__img">
+                            <img src="./images/service/service.png" alt="">
+                        </div>
+                    </div>
+                    <div class="why__item text-center mb-5">
+                        <p class="why__text">Рассмотрим вашу заявку в течение двух дней.</p>
+                        <div class="why__img">
+                            <img src="./images/service/service2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="why__item text-center mb-5">
+                        <p class="why__text">Выгодно, быстро и надежно!</p>
+                        <div class="why__img">
+                            <img src="./images/service/service3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="partners">
+            <div class="container-c">
+                <h2 class="partners__title title text-center">Наши Партнеры</h2>
+                <div class="partners__list row flex-wrap align-items-center justify-content-between mx-auto">
+                    <div class="arrow__btn-left"></div>
+                    <div class="partners__img  text-center mb-4"><a href="#!"><img src="./images/partner/partner1.png"
+                                                                                   alt=""></a></div>
+                    <div class="partners__img  text-center mb-4"><a href="#!"><img src="./images/partner/partner2.png"
+                                                                                   alt=""></a></div>
+                    <div class="partners__img  text-center mb-4"><a href="#!"><img src="./images/partner/partner3.png"
+                                                                                   alt=""></a></div>
+                    <div class="partners__img  text-center mb-4"><a href="#!"><img src="./images/partner/partner4.png"
+                                                                                   alt=""></a></div>
+                    <div class="partners__img  text-center mb-4"><a href="#!"><img src="./images/partner/partner5.png"
+                                                                                   alt=""></a></div>
+                    <div class="partners__img  text-center mb-4"><a href="#!"><img src="./images/partner/partner6.png"
+                                                                                   alt=""></a></div>
+                    <div class="arrow__btn-right"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="email">
+        <div class="container-c">
+            <h2 class="email__title title text-center"> Оставить <span class="title-blue">заявку</span></h2>
+            <form action="#" class="email__list row align-items-center justify-content-center">
+                <input class="email__field mr-md-3" type="text" placeholder="Компания">
+                <input class="email__field mr-md-3" type="number" placeholder="Контакты">
+                <select class="email__select" name="target">
+                    <option value="">Цель обращения</option>
+                </select>
+                <div class="email__div">
+                    <button type="submit" class="email__btn">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container-c">
+            <div class="footer__list row justify-content-between">
+                <div class="footer__item text-center text-sm-left col-12 col-sm-6 col-lg-3 mb-4 ">
+                    <h4 class="footer__title">Адрес</h4>
+                    <ul class="adres__list">
+                        <li class="d-flex mb-3">
+                            <img class="mr-2 ml-1 text-center" src="./images/adres/map.png" alt="">
+                            <a href="#!">г. Бишкек, ул. Исанова 235</a>
+                        </li>
+                        <li class="d-flex mb-3">
+                            <img class="mr-2" src="./images/adres/mail.png" alt="">
+                            <a href="mailto:Investment@gmail.com">Investment@gmail.com</a>
+                        </li>
+                        <li class="d-flex mb-3">
+                            <img class="mr-2" src="./images/adres/phone.png" alt="">
+                            <a href="tel:996 555 233 233">+ 996 (555) 233 233 </a>
+                        </li>
+                        <li class="d-flex">
+                            <img class="mr-2" src="./images/adres/phone.png" alt="">
+                            <a href="tel:996 312 233 233">+ 996 (312) 233 233 </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item text-center text-sm-left col-12 col-sm-6 col-lg-3 mb-4">
+                    <h4 class="footer__title">Компания</h4>
+                    <ul class="company__list">
+                        <li class="mb-3"><a href="./about/about.html">О нас</a></li>
+                        <li class=""><a href="./contact/contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item text-center text-sm-left col-12 col-sm-6 col-lg-3 mb-4">
+                    <h4 class="footer__title">Клиентам</h4>
+                    <ul class="client__list">
+                        <li class="mb-3"><a href="./auction/auction.html">Что такое кредитный аукцион?</a></li>
+                        <li class="mb-3"><a href="./credit/credit.html">Как учавствовать?</a></li>
+                        <li><a href="./document/document.html">Документы</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item text-center text-sm-left col-12 col-sm-6 col-lg-3 mb-4">
+                    <h4 class="footer__title">Партнерам</h4>
+                    <ul class="partner__list">
+                        <li class="mb-3"><a href="./partner/partner.html">Общие сведения</a></li>
+                        <li><a href="./request/request.html">Оставить заявку</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</main>
+
+<!--<script src="fullPage.js-master/dist/fullpage.js"></script>-->
+<script src="./js/main.js"></script>
+<!--<script>-->
+<!--    new fullpage('#fullpage', {-->
+<!--        //options here-->
+<!--        autoScrolling: true,-->
+<!--        scrollHorizontally: true-->
+<!--    });-->
+<!--</script>-->
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Заявка</title>
+    <style>
+
+        #preloader_preload {
+            text-align: center;
+            display: block;
+            position: fixed;
+            z-index: 99999;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #FFFFFF url('../images/loader.svg') center center no-repeat;
+            background-size: 160px;
+        }
+
+    </style>
+</head>
+
+<body>
+<div id="preloader">
+    <div id="preloader_preload"></div>
+</div>
+<script type="text/javascript">
+    let preloader = document.getElementById("preloader_preload");
+
+    function fadeOutnojquery(el) {
+        el.style.opacity = 1;
+        let interpreloader = setInterval(function () {
+            el.style.opacity = el.style.opacity - 0.05;
+            if (el.style.opacity <= 0.05) {
+                clearInterval(interpreloader);
+                preloader.style.display = "none";
+            }
+        }, 16);
+    }
+
+    window.onload = function () {
+        setTimeout(function () {
+            fadeOutnojquery(preloader);
+        }, 100);
+    };
+</script>
+    <main class="page">
+       
+        <menu>
+            <div class="container-c">
+                <nav class="nav d-flex justify-content-between align-items-center">
+                    <div class="nav__logo">
+                        <a href="../index.html"><img src="../images/logo/logo.png" alt=""></a>
+                    </div>
+                    <ul class="nav__list d-flex">
+                        <li class="nav__link mr-5"><a href="../auction/auction.html">Кредитный аукцион</a></li>
+                        <li class="nav__link mr-5"><a href="../credit/credit.html">Как участвовать</a></li>
+                        <li class="nav__link mr-5"><a href="../document/document.html">Документы</a></li>
+                        <li class="nav__link mr-5"><a href="../question/question.html">Вопросы и Ответы</a></li>
+                        <li class="nav__link"><a href="../partner/partner.html">Партнерам</a></li>
+                    </ul>
+                    <a href="../login/login.html" class="nav__btn">Войти</a>
+                    <div class="burger">
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
+        </menu>
+
+        <section class="request">
+            <div class="container-c">
+                <div class="request__title title text-center">Заявка</div>
+                <div class="request__list d-flex justify-content-center flex-wrap">
+                    <div class="request__item mr-lg-4 mr-0 mb-4 mb-lg-0">
+                        <div class="request__subtitle">Физическое лицо</div>
+                        <div class="request__text">
+                            Lacus, phasellus vitae eget feugiat sodales id adipiscing sagittis. In interdum euismod a, morbi pellentesque. Mauris, urna, a nulla urna, cras. At diam nunc egestas mus. Dui eu donec volutpat venenatis eu.
+                        </div>
+                        <a href="#!" class="request__btn">Заполнить</a>
+                    </div>
+                    <div class="request__item">
+                        <div class="request__subtitle">Юридическое лицо</div>
+                        <div class="request__text">
+                            Lacus, phasellus vitae eget feugiat sodales id adipiscing sagittis. In interdum euismod a, morbi pellentesque. Mauris, urna, a nulla urna, cras. At diam nunc egestas mus. Dui eu donec volutpat venenatis eu.
+                        </div>
+                        <a href="#!" class="request__btn">Заполнить</a>
+                    </div>
+                </div>
+                <div class="request__warning">Lacus, phasellus vitae eget feugiat sodales id adipiscing sagittis. In interdum euismod a, morbi pellentesque. Mauris, urna, a nulla urna, cras. At diam nunc egestas mus. Dui eu donec volutpat venenatis eu.</div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container-c">
+                <div class="footer__list row justify-content-between">
+                    <div class="footer__item text-center text-sm-left col-12 col-sm-6 col-lg-3 mb-4 ">
+                        <h4 class="footer__title">Адрес</h4>
+                        <ul class="adres__list">
+                            <li class="d-flex mb-3">
+                                <img class="mr-2 ml-1 text-center" src="../images/adres/map.png" alt="">
+                                <a href="#!">г. Бишкек, ул. Исанова 235</a>
+                            </li>
+                            <li class="d-flex mb-3">
+                                <img class="mr-2" src="../images/adres/mail.png" alt="">
+                                <a href="mailto:Investment@gmail.com">Investment@gmail.com</a>
+                            </li>
+                            <li class="d-flex mb-3">
+                                <img class="mr-2" src="../images/adres/phone.png" alt="">
+                                <a href="tel:996 555 233 233">+ 996 (555) 233 233 </a>
+                            </li>
+                            <li class="d-flex">
+                                <img class="mr-2" src="../images/adres/phone.png" alt="">
+                                <a href="tel:996 312 233 233">+ 996 (312) 233 233 </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__item text-center text-sm-left col-12 col-sm-6 col-lg-3 mb-4">
+                        <h4 class="footer__title">Компания</h4>
+                        <ul class="company__list">
+                            <li class="mb-3"><a href="../about/about.html">О нас</a> </li>
+                            <li class=""><a href="../contact/contact.html">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__item text-center text-sm-left col-12 col-sm-6 col-lg-3 mb-4">
+                        <h4 class="footer__title">Клиентам</h4>
+                        <ul class="client__list">
+                            <li class="mb-3"><a href="../auction/auction.html">Что такое кредитный аукцион?</a></li>
+                            <li class="mb-3"><a href="../credit/credit.html">Как учавствовать?</a></li>
+                            <li><a href="../document/document.html">Документы</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__item text-center text-sm-left col-12 col-sm-6 col-lg-3 mb-4">
+                        <h4 class="footer__title">Партнерам</h4>
+                        <ul class="partner__list">
+                            <li class="mb-3"><a href="../partner/partner.html">Общие сведения</a></li>
+                            <li><a href="./request.html">Оставить заявку</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+    <script src="../js/burger.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Вопросы и Ответы</title>
+    <style>
+
+        #preloader_preload {
+            text-align: center;
+            display: block;
+            position: fixed;
+            z-index: 99999;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #FFFFFF url('../images/loader.svg') center center no-repeat;
+            background-size: 160px;
+        }
+
+    </style>
+</head>
+
+<body>
+<div id="preloader">
+    <div id="preloader_preload"></div>
+</div>
+<script type="text/javascript">
+    let preloader = document.getElementById("preloader_preload");
+
+    function fadeOutnojquery(el) {
+        el.style.opacity = 1;
+        let interpreloader = setInterval(function () {
+            el.style.opacity = el.style.opacity - 0.05;
+            if (el.style.opacity <= 0.05) {
+                clearInterval(interpreloader);
+                preloader.style.display = "none";
+            }
+        }, 16);
+    }
+
+    window.onload = function () {
+        setTimeout(function () {
+            fadeOutnojquery(preloader);
+        }, 100);
+    };
+</script>
+<main class="page">
+
+    <menu>
+        <div class="container-c">
+            <nav class="nav d-flex justify-content-between align-items-center">
+                <div class="nav__logo">
+                    <a href="../index.html"><img src="../images/logo/logo.png" alt=""></a>
+                </div>
+                <ul class="nav__list d-flex">
+                    <li class="nav__link mr-5"><a href="../auction/auction.html">Кредитный аукцион</a></li>
+                    <li class="nav__link mr-5"><a href="../credit/credit.html">Как участвовать</a></li>
+                    <li class="nav__link mr-5"><a href="../document/document.html">Документы</a></li>
+                    <li class="nav__link mr-5"><a href="../question/question.html">Вопросы и Ответы</a></li>
+                    <li class="nav__link"><a href="../partner/partner.html">Партнерам</a></li>
+                </ul>
+                <a href="../login/login.html" class="nav__btn">Войти</a>
+                <div class="burger">
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </menu>
+
+    <section class="question">
+        <div class="container-c">
+            <div class="question__title title text-center">Вопросы и <span class="title-blue">ответы</span></div>
+            <div class="question__list">
+
+                <div class="question__subtitle">О получении займа</div>
+
+
+                <div class="question__item d-flex align-items-center q-1">
+                    <div class="question__arrow ">
+                        <img class="q-1" src="../images/arrow/arrowDown.png" alt="">
+                    </div>
+                    <div class="question__suptitle">Что необходимо для получения займа от Somo.kg?</div>
+                </div>
+                <div class="question__text q-1">
+                    <p>
+                        Участникам аукциона. Необходимо зарегистрироваться, заполнить и подать заявку согласно
+                        указанным требованиям, подтвердить свои данные. 
+                    </p>
+                    <p>
+                        Кредитным организациям. Пройти процедуру регистрации, загрузить информацию
+                        об объекте торгов.
+                    </p>
+                    <p>
+                        После заполнения заявки с вами свяжется наш специалист и проинформирует о том, какая
+                        документация необходима для заявки. Обычно это пакет документов, который не
+                        составляет труда собрать за пару рабочих дней. Вся информация строго
+                        конфиденциальна.
+                    </p>
+                </div>
+                <div class="question__item d-flex align-items-center q-2">
+                    <div class="question__arrow">
+                        <img class="q-2" src="../images/arrow/arrowDown.png" alt="">
+                    </div>
+                    <div class="question__suptitle">Какие документы необходимы для получения займа в Somo.kg?</div>
+                </div>
+                <div class="question__text q-2">
+                    <p>
+                        Участникам аукциона. Необходимо зарегистрироваться, заполнить и подать заявку согласно
+                        указанным требованиям, подтвердить свои данные. 
+                    </p>
+                    <p>
+                        Кредитным организациям. Пройти процедуру регистрации, загрузить информацию
+                        об объекте торгов.
+                    </p>
+                    <p>
+                        После заполнения заявки с вами свяжется наш специалист и проинформирует о том, какая
+                        документация необходима для заявки. Обычно это пакет документов, который не
+                        составляет труда собрать за пару рабочих дней. Вся информация строго
+                        конфиденциальна.
+                    </p>
+                </div>
+                <div class="question__item d-flex align-items-center q-3">
+                    <div class="question__arrow ">
+                        <img class="q-3" src="../images/arrow/arrowDown.png" alt="">
+                    </div>
+                    <div class="question__suptitle">Какую денежную сумму я могу занять?</div>
+                </div>
+                <div class="question__text q-3">
+                    <p>
+                        Участникам аукциона. Необходимо зарегистрироваться, заполнить и подать заявку согласно
+                        указанным требованиям, подтвердить свои данные. 
+                    </p>
+                    <p>
+                        Кредитным организациям. Пройти процедуру регистрации, загрузить информацию
+                        об объекте торгов.
+                    </p>
+                    <p>
+                        После заполнения заявки с вами свяжется наш специалист и проинформирует о том, какая
+                        документация необходима для заявки. Обычно это пакет документов, который не
+                        составляет труда собрать за пару рабочих дней. Вся информация строго
+                        конфиденциальна.
+                    </p>
+                </div>
+                <div class="question__item d-flex align-items-center q-4">
+                    <div class="question__arrow ">
+                        <img class="q-4" src="../images/arrow/arrowDown.png" alt="">
+                    </div>
+                    <div class="question__suptitle">Могу ли я иметь несколько займов в Somo.kg одновременно?</div>
+                </div>
+                <div class="question__text q-4">
+                    <p>
+                        Участникам аукциона. Необходимо зарегистрироваться, заполнить и подать заявку согласно
+                        указанным требованиям, подтвердить свои данные. 
+                    </p>
+                    <p>
+                        Кредитным организациям. Пройти процедуру регистрации, загрузить информацию
+                        об объекте торгов.
+                    </p>
+                    <p>
+                        После заполнения заявки с вами свяжется наш специалист и проинформирует о том, какая
+                        документация необходима для заявки. Обычно это пакет документов, который не
+                        составляет труда собрать за пару рабочих дней. Вся информация строго
+                        конфиденциальна.
+                    </p>
+                </div>
+                <div class="question__item d-flex align-items-center q-5">
+                    <div class="question__arrow">
+                        <img class="q-5" src="../images/arrow/arrowDown.png" alt="">
+                    </div>
+                    <div class="question__suptitle">Возможно ли получить дополнительную сумму к существующему займу?
+                    </div>
+                </div>
+                <div class="question__text q-5">
+                    <p>
+                        Участникам аукциона. Необходимо зарегистрироваться, заполнить и подать заявку согласно
+                        указанным требованиям, подтвердить свои данные. 
+                    </p>
+                    <p>
+                        Кредитным организациям. Пройти процедуру регистрации, загрузить информацию
+                        об объекте торгов.
+                    </p>
+                    <p>
+                        После заполнения заявки с вами свяжется наш специалист и проинформирует о том, какая
+                        документация необходима для заявки. Обычно это пакет документов, который не
+                        составляет труда собрать за пару рабочих дней. Вся информация строго
+                        конфиденциальна.
+                    </p>
+                </div>
+                <div class="question__item d-flex align-items-center q-6">
+                    <div class="question__arrow">
+                        <img class="q-6" src="../images/arrow/arrowDown.png" alt="">
+                    </div>
+                    <div class="question__suptitle">Могу ли я взять займ, если у меня уже есть кредит в банке или в
+                        другом кредитном учреждении?
+                    </div>
+                </div>
+                <div class="question__text q-6">
+                    <p>
+                        Участникам аукциона. Необходимо зарегистрироваться, заполнить и подать заявку согласно
+                        указанным требованиям, подтвердить свои данные. 
+                    </p>
+                    <p>
+                        Кредитным организациям. Пройти процедуру регистрации, загрузить информацию
+                        об объекте торгов.
+                    </p>
+                    <p>
+                        После заполнения заявки с вами свяжется наш специалист и проинформирует о том, какая
+                        документация необходима для заявки. Обычно это пакет документов, который не
+                        составляет труда собрать за пару рабочих дней. Вся информация строго
+                        конфиденциальна.
+                    </p>
+                </div>
+
+
+                <div class="question__subtitle margin-top-30">О возврате (оплата задолженности по договору займа)</div>
+                <div class="question__item d-flex align-items-center q-7">
+                    <div class="question__arrow">
+                        <img class="q-7" src="../images/arrow/arrowDown.png" alt="">
+                    </div>
+                    <div class="question__suptitle">Что необходимо для получения займа от Somo.kg?</div>
+
+                </div>
+                <div class="question__text q-7">
+                    <p>
+                        Участникам аукциона. Необходимо зарегистрироваться, заполнить и подать заявку согласно
+                        указанным требованиям, подтвердить свои данные. 
+                    </p>
+                    <p>
+                        Кредитным организациям. Пройти процедуру регистрации, загрузить информацию
+                        об объекте торгов.
+                    </p>
+                    <p>
+                        После заполнения заявки с вами свяжется наш специалист и проинформирует о том, какая
+                        документация необходима для заявки. Обычно это пакет документов, который не
+                        составляет труда собрать за пару рабочих дней. Вся информация строго
+                        конфиденциальна.
+                    </p>
+                </div>
+                <div class="question__item d-flex align-items-center q-8">
+                    <div class="question__arrow">
+                        <img class="q-8" src="../images/arrow/arrowDown.png" alt="">
+                    </div>
+                    <div class="question__suptitle">Какие документы необходимы для получения займа в Somo.kg?</div>
+                </div>
+                <div class="question__text q-8">
+                    <p>
+                        Участникам аукциона. Необходимо зарегистрироваться, заполнить и подать заявку согласно
+                        указанным требованиям, подтвердить свои данные. 
+                    </p>
+                    <p>
+                        Кредитным организациям. Пройти процедуру регистрации, загрузить информацию
+                        об объекте торгов.
+                    </p>
+                    <p>
+                        После заполнения заявки с вами свяжется наш специалист и проинформирует о том, какая
+                        документация необходима для заявки. Обычно это пакет документов, который не
+                        составляет труда собрать за пару рабочих дней. Вся информация строго
+                        конфиденциальна.
+                    </p>
+                </div>
+                <div class="question__item d-flex align-items-center q-9">
+                    <div class="question__arrow">
+                        <img class="q-9" src="../images/arrow/arrowDown.png" alt="">
+                    </div>
+                    <div class="question__suptitle">Какую денежную сумму я могу занять?</div>
+                </div>
+                <div class="question__text q-9">
+                    <p>
+                        Участникам аукциона. Необходимо зарегистрироваться, заполнить и подать заявку согласно
+                        указанным требованиям, подтвердить свои данные. 
+                    </p>
+                    <p>
+                        Кредитным организациям. Пройти процедуру регистрации, загрузить информацию
+                        об объекте торгов.
+                    </p>
+                    <p>
+                        После заполнения заявки с вами свяжется наш специалист и проинформирует о том, какая
+                        документация необходима для заявки. Обычно это пакет документов, который не
+                        составляет труда собрать за пару рабочих дней. Вся информация строго
+                        конфиденциальна.
+                    </p>
+                </div>
+                <div class="question__item d-flex align-items-center q-10" >
+                    <div class="question__arrow">
+                        <img class="q-10" src="../images/arrow/arrowDown.png" alt="">
+                    </div>
+                    <div class="question__suptitle">Могу ли я иметь несколько займов в Somo.kg одновременно?</div>
+                </div>
+                <div class="question__text q-10">
+                    <p>
+                        Участникам аукциона. Необходимо зарегистрироваться, заполнить и подать заявку согласно
+                        указанным требованиям, подтвердить свои данные. 
+                    </p>
+                    <p>
+                        Кредитным организациям. Пройти процедуру регистрации, загрузить информацию
+                        об объекте торгов.
+                    </p>
+                    <p>
+                        После заполнения заявки с вами свяжется наш специалист и проинформирует о том, какая
+                        документация необходима для заявки. Обычно это пакет документов, который не
+                        составляет труда собрать за пару рабочих дней. Вся информация строго
+                        конфиденциальна.
+                    </p>
+                </div>
+                <div class="question__item d-flex align-items-center q-11">
+                    <div class="question__arrow">
+                        <img class="q-11" src="../images/arrow/arrowDown.png" alt="">
+                    </div>
+                    <div class="question__suptitle">Возможно ли получить дополнительную сумму к существующему займу?
+                    </div>
+                </div>
+                <div class="question__text q-11">
+                    <p>
+                        Участникам аукциона. Необходимо зарегистрироваться, заполнить и подать заявку согласно
+                        указанным требованиям, подтвердить свои данные. 
+                    </p>
+                    <p>
+                        Кредитным организациям. Пройти процедуру регистрации, загрузить информацию
+                        об объекте торгов.
+                    </p>
+                    <p>
+                        После заполнения заявки с вами свяжется наш специалист и проинформирует о том, какая
+                        документация необходима для заявки. Обычно это пакет документов, который не
+                        составляет труда собрать за пару рабочих дней. Вся информация строго
+                        конфиденциальна.
+                    </p>
+                </div>
+                <div class="question__item d-flex align-items-center q-12">
+                    <div class="question__arrow">
+                        <img class="q-12" src="../images/arrow/arrowDown.png" alt="">
+                    </div>
+                    <div class="question__suptitle">Могу ли я взять займ, если у меня уже есть кредит в банке или в
+                        другом кредитном учреждении?
+                    </div>
+                </div>
+                <div class="question__text q-12">
+                    <p>
+                        Участникам аукциона. Необходимо зарегистрироваться, заполнить и подать заявку согласно
+                        указанным требованиям, подтвердить свои данные. 
+                    </p>
+                    <p>
+                        Кредитным организациям. Пройти процедуру регистрации, загрузить информацию
+                        об объекте торгов.
+                    </p>
+                    <p>
+                        После заполнения заявки с вами свяжется наш специалист и проинформирует о том, какая
+                        документация необходима для заявки. Обычно это пакет документов, который не
+                        составляет труда собрать за пару рабочих дней. Вся информация строго
+                        конфиденциальна.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container-c">
+            <div class="footer__list row justify-content-between">
+                <div class="footer__item text-center text-sm-left col-12 col-sm-6 col-lg-3 mb-4 ">
+                    <div class="footer__title">Адрес</div>
+                    <ul class="adres__list">
+                        <li class="d-flex mb-3">
+                            <img class="mr-2 ml-1 text-center" src="../images/adres/map.png" alt="">
+                            <a href="#!">г. Бишкек, ул. Исанова 235</a>
+                        </li>
+                        <li class="d-flex mb-3">
+                            <img class="mr-2" src="../images/adres/mail.png" alt="">
+                            <a href="mailto:Investment@gmail.com">Investment@gmail.com</a>
+                        </li>
+                        <li class="d-flex mb-3">
+                            <img class="mr-2" src="../images/adres/phone.png" alt="">
+                            <a href="tel:996 555 233 233">+ 996 (555) 233 233 </a>
+                        </li>
+                        <li class="d-flex">
+                            <img class="mr-2" src="../images/adres/phone.png" alt="">
+                            <a href="tel:996 312 233 233">+ 996 (312) 233 233 </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__item text-center text-sm-left col-12 col-sm-6 col-lg-3 mb-4">
+                    <div class="footer__title">Компания</div>
+                    <ul class="company__list">
+                        <li class="mb-3"><a href="../about/about.html">О нас</a></li>
+                        <li class=""><a href="../contact/contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item text-center text-sm-left col-12 col-sm-6 col-lg-3 mb-4">
+                    <div class="footer__title">Клиентам</div>
+                    <ul class="client__list">
+                        <li class="mb-3"><a href="../auction/auction.html">Что такое кредитный аукцион?</a></li>
+                        <li class="mb-3"><a href="../credit/credit.html">Как учавствовать?</a></li>
+                        <li><a href="../document/document.html">Документы</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item text-center text-sm-left col-12 col-sm-6 col-lg-3 mb-4">
+                    <div class="footer__title">Партнерам</div>
+                    <ul class="partner__list">
+                        <li class="mb-3"><a href="../partner/partner.html">Общие сведения</a></li>
+                        <li><a href="#!">Оставить заявку</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</main>
+<script src="../js/burger.js"></script>
+<script src="./js/question.js"></script>
+</body>
+
+</html>

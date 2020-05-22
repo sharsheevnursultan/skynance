@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Контакты</title>
+    <style>
+
+        #preloader_preload {
+            text-align: center;
+            display: block;
+            position: fixed;
+            z-index: 99999;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #FFFFFF url('../images/loader.svg') center center no-repeat;
+            background-size: 160px;
+        }
+
+    </style>
+</head>
+
+<body>
+<div id="preloader">
+    <div id="preloader_preload"></div>
+</div>
+<script type="text/javascript">
+    let preloader = document.getElementById("preloader_preload");
+
+    function fadeOutnojquery(el) {
+        el.style.opacity = 1;
+        let interpreloader = setInterval(function () {
+            el.style.opacity = el.style.opacity - 0.05;
+            if (el.style.opacity <= 0.05) {
+                clearInterval(interpreloader);
+                preloader.style.display = "none";
+            }
+        }, 16);
+    }
+
+    window.onload = function () {
+        setTimeout(function () {
+            fadeOutnojquery(preloader);
+        }, 100);
+    };
+</script>
+    <main class="page">
+       
+        <menu>
+            <div class="container-c">
+                <nav class="nav d-flex justify-content-between align-items-center">
+                    <div class="nav__logo">
+                        <a href="../index.html"><img src="../images/logo/logo.png" alt=""></a>
+                    </div>
+                    <ul class="nav__list d-flex">
+                        <li class="nav__link mr-5"><a href="../auction/auction.html">Кредитный аукцион</a></li>
+                        <li class="nav__link mr-5"><a href="../credit/credit.html">Как участвовать</a></li>
+                        <li class="nav__link mr-5"><a href="../document/document.html">Документы</a></li>
+                        <li class="nav__link mr-5"><a href="../question/question.html">Вопросы и Ответы</a></li>
+                        <li class="nav__link"><a href="../partner/partner.html">Партнерам</a></li>
+                    </ul>
+                    <a href="../login/login.html" class="nav__btn">Войти</a>
+                    <div class="burger">
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
+        </menu>
+
+        <section class="contact">
+            <div class="container-c">
+                <div class="contact__title title text-center"><span class="title-blue">Наши</span> Контакты</div>
+                <div class="contact__body row justify-content-around">
+                    <div class="contact__map d-flex align-items-center  col-12 col-lg-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1461.945656195789!2d74.57673080472638!3d42.87513814330652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2skg!4v1584798115953!5m2!1sru!2skg" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                    <div class="contact__content col-12 col-lg-6">
+                        <div class="contact__list d-flex flex-wrap">
+                            <div class="contact__text col-12 col-md-6 mb-3">
+                                <span>Address: </span>Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France
+                            </div>
+                            <div class="contact__text col-12 col-md-6 mb-3">
+                                <span>Phone: </span><a href="tel:33 787 656 9898">+33 787 656 9898</a>
+                            </div>
+                            <div class="contact__text col-12 col-md-6 mb-3">
+                                <span>E-Mail: </span><a href="mailto:contact@example.com">contact@example.com</a>
+                            </div>
+                            <div class="contact__text col-12 col-md-6 mb-3">
+                                <span>Web: </span><a href="https://www.yourdomain.com">https://www.yourdomain.com</a>
+                            </div>
+                        </div>
+                        <form action="#" class="contact__form d-flex flex-wrap col-12 justify-content-between">
+                            <input class="contact__input col-12 col-sm-6" type="text" placeholder="Компания">
+                            <input class="contact__input col-12 col-sm-5" type="text" placeholder="Номер телефона">
+                            <textarea  class="contact__textarea col-12" name="" id="" cols="30" rows="5" placeholder="Цель обращения"></textarea>
+                                <button class="contact__btn">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+         
+
+        <footer class="footer">
+            <div class="container-c">
+                <div class="footer__list row justify-content-between">
+                    <div class="footer__item text-center text-sm-left col-12 col-sm-6 col-lg-3 mb-4 ">
+                        <h4 class="footer__title">Адрес</h4>
+                        <ul class="adres__list">
+                            <li class="d-flex mb-3">
+                                <img class="mr-2 ml-1 text-center" src="../images/adres/map.png" alt="">
+                                <a href="#!">г. Бишкек, ул. Исанова 235</a>
+                            </li>
+                            <li class="d-flex mb-3">
+                                <img class="mr-2" src="../images/adres/mail.png" alt="">
+                                <a href="mailto:Investment@gmail.com">Investment@gmail.com</a>
+                            </li>
+                            <li class="d-flex mb-3">
+                                <img class="mr-2" src="../images/adres/phone.png" alt="">
+                                <a href="tel:996 555 233 233">+ 996 (555) 233 233 </a>
+                            </li>
+                            <li class="d-flex">
+                                <img class="mr-2" src="../images/adres/phone.png" alt="">
+                                <a href="tel:996 312 233 233">+ 996 (312) 233 233 </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__item text-center text-sm-left col-12 col-sm-6 col-lg-3 mb-4">
+                        <h4 class="footer__title">Компания</h4>
+                        <ul class="company__list">
+                            <li class="mb-3"><a href="../about/about.html">О нас</a> </li>
+                            <li class=""><a href="../contact/contact.html">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__item text-center text-sm-left col-12 col-sm-6 col-lg-3 mb-4">
+                        <h4 class="footer__title">Клиентам</h4>
+                        <ul class="client__list">
+                            <li class="mb-3"><a href="../auction/auction.html">Что такое кредитный аукцион?</a></li>
+                            <li class="mb-3"><a href="../credit/credit.html">Как учавствовать?</a></li>
+                            <li><a href="../document/document.html">Документы</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__item text-center text-sm-left col-12 col-sm-6 col-lg-3 mb-4">
+                        <h4 class="footer__title">Партнерам</h4>
+                        <ul class="partner__list">
+                            <li class="mb-3"><a href="../partner/partner.html">Общие сведения</a></li>
+                            <li><a href="#!">Оставить заявку</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+    <script src="../js/burger.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Кредитный аукцион</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/media.css">
+</head>
+<body>
+<div id="preloader">
+    <div id="preloader_preload"></div>
+</div>
+<script type="text/javascript">
+    var preloader = document.getElementById("preloader_preload");
+
+    function fadeOutnojquery(el) {
+        el.style.opacity = 1;
+        var interpreloader = setInterval(function () {
+            el.style.opacity = el.style.opacity - 0.05;
+            if (el.style.opacity <= 0.05) {
+                clearInterval(interpreloader);
+                preloader.style.display = "none";
+            }
+        }, 16);
+    }
+
+    window.onload = function () {
+        setTimeout(function () {
+            fadeOutnojquery(preloader);
+        }, 100);
+    };
+</script>
+<header class="header">
+    <div class="container flex">
+        <div class="logo"><a href="#"><img src="../img/skynance-logo.png" alt=""></a></div>
+        <div class="top-menu">
+            <ul>
+                <li class="top-menu__item"><a href="../client/client-active-auction.html">Кредитный аукцион</a></li>
+                <li class="top-menu__item"><a href="about-us.html">Как участвовать</a></li>
+                <li class="top-menu__item"><a href="services.html">Документы</a></li>
+                <li class="top-menu__item"><a href="faq.html">Вопросы и Ответы</a></li>
+                <li class="top-menu__item mr-0"><a href="contact.html">Партнерам</a></li>
+            </ul>
+        </div>
+        <div class="auth">
+            <a href="">
+                <span>Имя Фамилия</span>
+            </a>
+            <span class="header-user-photo">
+                <img class="header-user-photo" src="https://source.unsplash.com/54x54?profile,user" alt="">
+            </span>
+        </div>
+    </div>
+</header>
+<div class="sidebar">
+	<ul class="sidebar-menu">
+		<li class="sidebar-menu__item active"><a href="bank-my-profile.html"><i></i><span>Мой профиль</span></a></li>
+		<li class="sidebar-menu__item with-child open">
+            <a href="#"><i></i><span>Аукционы</span></a>
+            <div class="sub-menu">
+                <a href="bank-credit-auction.html" class="sub-menu__item">Кредитный ауцион</a>
+                <a href="deposit-auction.html" class="sub-menu__item">Депозитный  ауцион</a>
+            </div>
+        </li>
+		<li class="sidebar-menu__item"><a href="moderator-call.hmtl"><i></i><span>Связь с модератором</span></a></li>
+		<li class="sidebar-menu__item"><a href="bank-settings.html"><i></i><span>Настройки</span></a></li>
+		<li class="sidebar-menu__item blue"><a href="service-news.html"><i></i><span>Новости сервиса</span></a></li>
+	</ul>
+    <div class="sidebar-bottom-info">
+        <div class="info-block">
+            <div class="info-block-title">
+                Рыночные ставки на <br>привлеченные ресурсы
+            </div>
+            <ul class="info-block-items">
+                <li>
+                    <span>KGS</span>
+                    <span>4.5%</span>
+                </li>
+                <li>
+                    <span>KGS</span>
+                    <span>4.5%</span>
+                </li>
+                <li>
+                    <span>KGS</span>
+                    <span>4.5%</span>
+                </li>
+                <li>
+                    <span>KGS</span>
+                    <span>4.5%</span>
+                </li>
+                <li>
+                    <span>KGS</span>
+                    <span>4.5%</span>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<div class="wrapper">
+    <div class="title">Кредитный аукцион</div>
+    <div class="auction-list-nav">
+        <div class="d-flex">
+            <div class="al-item active"><a href="#">ДЕЙСТВУЮЩИЕ <span></span></a></div>
+            <div class="al-item"><a href="#">ПРЕДСТОЯЩИЕ <span></span></a></div>
+            <div class="al-item"><a href="#">ПРОШЕДШИЕ <span></span></a></div>
+        </div>
+    </div>
+    <div class="auc">
+         <div class="auc-title">
+             <div class="item date"><span class="sort-btn">Время<br>торгов</span></div>
+             <div class="item name"><span class="sort-btn">Клиенты</span></div>
+             <div class="item target" ><span>Цель<br>кредита</span></div>
+             <div class="item sum"><span class="sort-btn">Сумма<br>кредита</span></div>
+             <div class="item zalog"><span>Залоговое<br>обеспечение</span></div>
+             <div class="item history"><span class="sort-btn">Кредитная<br>история</span></div>
+             <div class="item statistic"><span class="sort-btn">Финансовые<br>показатели</span></div>
+         </div>
+        <div class="auc-content">
+            <div class="auc-item">
+                <div class="date">01.12.19<br>18:00</div>
+                <div class="name">Иванов Иван Иванович</div>
+                <div class="target">Diam est pretium aliquam convallis nunc.</div>
+                <div class="sum">100 000 000 USD</div>
+                <div class="zalog">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros elit etiam nam felis.</div>
+                <div class="history">ABC</div>
+                <div class="statistic"><span>161</span><a href="" class="see">Посмотреть</a></div>
+                <div class="more"><a href="bank-auction-page.html" class="more-btn">Посмотреть</a></div>
+            </div>
+            <div class="auc-item">
+                <div class="date">01.12.19<br>18:00</div>
+                <div class="name">Иванов Иван Иванович</div>
+                <div class="target">Diam est pretium aliquam convallis nunc.</div>
+                <div class="sum">100 000 000 USD</div>
+                <div class="zalog">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros elit etiam nam felis.</div>
+                <div class="history">ABC</div>
+                <div class="statistic"><span>161</span><a href="" class="see">Посмотреть</a></div>
+                <div class="more"><a href="" class="more-btn">Посмотреть</a></div>
+            </div>
+            <div class="auc-item">
+                <div class="date">01.12.19<br>18:00</div>
+                <div class="name">Иванов Иван Иванович</div>
+                <div class="target">Diam est pretium aliquam convallis nunc.</div>
+                <div class="sum">100 000 000 USD</div>
+                <div class="zalog">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros elit etiam nam felis.</div>
+                <div class="history">ABC</div>
+                <div class="statistic"><span>161</span><a href="" class="see">Посмотреть</a></div>
+                <div class="more"><a href="bank-auction-page.html" class="more-btn">Посмотреть</a></div>
+            </div>
+            <div class="auc-item">
+                <div class="date">01.12.19<br>18:00</div>
+                <div class="name">Иванов Иван Иванович</div>
+                <div class="target">Diam est pretium aliquam convallis nunc.</div>
+                <div class="sum">100 000 000 USD</div>
+                <div class="zalog">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros elit etiam nam felis.</div>
+                <div class="history">ABC</div>
+                <div class="statistic"><span>161</span><a href="" class="see">Посмотреть</a></div>
+                <div class="more"><a href="bank-auction-page.html" class="more-btn">Посмотреть</a></div>
+            </div>
+            <div class="auc-item">
+                <div class="date">01.12.19<br>18:00</div>
+                <div class="name">Иванов Иван Иванович</div>
+                <div class="target">Diam est pretium aliquam convallis nunc.</div>
+                <div class="sum">100 000 000 USD</div>
+                <div class="zalog">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros elit etiam nam felis.</div>
+                <div class="history">ABC</div>
+                <div class="statistic"><span>161</span><a href="" class="see">Посмотреть</a></div>
+                <div class="more"><a href="bank-auction-page.html" class="more-btn">Посмотреть</a></div>
+            </div>
+            <div class="auc-item">
+                <div class="date">01.12.19<br>18:00</div>
+                <div class="name">Иванов Иван Иванович</div>
+                <div class="target">Diam est pretium aliquam convallis nunc.</div>
+                <div class="sum">100 000 000 USD</div>
+                <div class="zalog">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros elit etiam nam felis.</div>
+                <div class="history">ABC</div>
+                <div class="statistic"><span>161</span><a href="" class="see">Посмотреть</a></div>
+                <div class="more"><a href="bank-auction-page.html" class="more-btn">Посмотреть</a></div>
+            </div>
+            <div class="auc-item">
+                <div class="date">01.12.19<br>18:00</div>
+                <div class="name">Иванов Иван Иванович</div>
+                <div class="target">Diam est pretium aliquam convallis nunc.</div>
+                <div class="sum">100 000 000 USD</div>
+                <div class="zalog">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros elit etiam nam felis.</div>
+                <div class="history">ABC</div>
+                <div class="statistic"><span>161</span><a href="" class="see">Посмотреть</a></div>
+                <div class="more"><a href="bank-auction-page.html" class="more-btn">Посмотреть</a></div>
+            </div>
+            <div class="auc-item">
+                <div class="date">01.12.19<br>18:00</div>
+                <div class="name">Иванов Иван Иванович</div>
+                <div class="target">Diam est pretium aliquam convallis nunc.</div>
+                <div class="sum">100 000 000 USD</div>
+                <div class="zalog">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros elit etiam nam felis.</div>
+                <div class="history">ABC</div>
+                <div class="statistic"><span>161</span><a href="" class="see">Посмотреть</a></div>
+                <div class="more"><a href="bank-auction-page.html" class="more-btn">Посмотреть</a></div>
+            </div>
+            <div class="auc-item">
+                <div class="date">01.12.19<br>18:00</div>
+                <div class="name">Иванов Иван Иванович</div>
+                <div class="target">Diam est pretium aliquam convallis nunc.</div>
+                <div class="sum">100 000 000 USD</div>
+                <div class="zalog"  style="overflow:hidden;height:48px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros elit etiam nam felis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros elit etiam nam felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros elit etiam nam felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros elit etiam nam felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros elit etiam nam felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros elit etiam nam felis.</div>
+                <div class="history">ABC</div>
+                <div class="statistic"><span>161</span><a href="" class="see">Посмотреть</a></div>
+                <div class="more"><a href="bank-auction-page.html" class="more-btn">Посмотреть</a></div>
+            </div>
+            <div class="auc-item">
+                <div class="date">01.12.19<br>18:00</div>
+                <div class="name">Иванов Иван Иванович</div>
+                <div class="target">Diam est pretium aliquam convallis nunc.</div>
+                <div class="sum">100 000 000 USD</div>
+                <div class="zalog" style="overflow:hidden;height:32px;">Lorem ipsum dolor sitamet, consectetur adipiscing elit. Eros elit etiam namet, consectetur adipiscing elit. Eros elit etiam nam felis.</div>
+                <div class="history">ABC</div>
+                <div class="statistic"><span>161</span><a href="" class="see">Посмотреть</a></div>
+                <div class="more"><a href="bank-auction-page.html" class="more-btn">Посмотреть</a></div>
+            </div>
+            <div class="auc-item">
+                <div class="date">01.12.19<br>18:00</div>
+                <div class="name">Иванов Иван Иванович</div>
+                <div class="target">Diam est pretium aliquam convallis nunc.</div>
+                <div class="sum">100 000 000 USD</div>
+                <div class="zalog"  >Lorem ipsum dolor sit amet, consecteturasdasdasdasdas sdfsdfsd adipiscing elit. Eros elit etiam nam felis. sdf sdfsdfsd</div>
+                <div class="history">ABC</div>
+                <div class="statistic"><span>161</span><a href="" class="see">Посмотреть</a></div>
+                <div class="more"><a href="bank-auction-page.html" class="more-btn">Посмотреть</a></div>
+            </div>
+            <div class="auc-item">
+                <div class="date">01.12.19<br>18:00</div>
+                <div class="name">Иванов Иван Иванович</div>
+                <div class="target">Diam est pretium aliquam convallis nunc.</div>
+                <div class="sum">100 000 000 USD</div>
+                <div class="zalog">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros elit etiam nam felis.</div>
+                <div class="history">ABC</div>
+                <div class="statistic"><span>161</span><a href="" class="see">Посмотреть</a></div>
+                <div class="more"><a href="bank-auction-page.html" class="more-btn">Посмотреть</a></div>
+            </div>
+            <div class="auc-item">
+                <div class="date">01.12.19<br>18:00</div>
+                <div class="name">Иванов Иван Иванович</div>
+                <div class="target">Diam est pretium aliquam convallis nunc.</div>
+                <div class="sum">100 000 000 USD</div>
+                <div class="zalog">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros elit etiam nam felis.</div>
+                <div class="history">ABC</div>
+                <div class="statistic"><span>161</span><a href="" class="see">Посмотреть</a></div>
+                <div class="more"><a href="" class="more-btn">Посмотреть</a></div>
+            </div>
+            <div class="auc-item">
+                <div class="date">01.12.19<br>18:00</div>
+                <div class="name">Иванов Иван Иванович</div>
+                <div class="target">Diam est pretium aliquam convallis nunc.</div>
+                <div class="sum">100 000 000 USD</div>
+                <div class="zalog">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros elit etiam nam felis.</div>
+                <div class="history">ABC</div>
+                <div class="statistic"><span>161</span><a href="" class="see">Посмотреть</a></div>
+                <div class="more"><a href="" class="more-btn">Посмотреть</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../libs/jquery/jquery-3.3.1.min.js"></script>
+<script src="../js/common.js"></script>
+</body>
+</html>

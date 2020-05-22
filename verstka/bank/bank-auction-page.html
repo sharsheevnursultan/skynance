@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Банк аукцион Внутренняя страница аукционного лота </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../libs/niceselect/nice-select.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/media.css">
+</head>
+<body>
+<div id="preloader">
+    <div id="preloader_preload"></div>
+</div>
+<script type="text/javascript">
+    let preloader = document.getElementById("preloader_preload");
+
+    function fadeOutnojquery(el) {
+        el.style.opacity = 1;
+        let interpreloader = setInterval(function () {
+            el.style.opacity = el.style.opacity - 0.05;
+            if (el.style.opacity <= 0.05) {
+                clearInterval(interpreloader);
+                preloader.style.display = "none";
+            }
+        }, 16);
+    }
+
+    window.onload = function () {
+        setTimeout(function () {
+            fadeOutnojquery(preloader);
+        }, 100);
+    };
+</script>
+
+<header class="header">
+    <div class="container flex">
+        <div class="logo"><a href="#"><img src="../img/skynance-logo.png" alt=""></a></div>
+        <div class="top-menu">
+            <ul>
+                <li class="top-menu__item"><a href="../client/client-active-auction.html">Кредитный аукцион</a></li>
+                <li class="top-menu__item"><a href="about-us.html">Как участвовать</a></li>
+                <li class="top-menu__item"><a href="services.html">Документы</a></li>
+                <li class="top-menu__item"><a href="faq.html">Вопросы и Ответы</a></li>
+                <li class="top-menu__item mr-0"><a href="contact.html">Партнерам</a></li>
+            </ul>
+        </div>
+        <div class="auth">
+            <a href="">
+                <span>Имя Фамилия</span>
+            </a>
+            <span class="header-user-photo">
+                <img class="header-user-photo" src="https://source.unsplash.com/54x54?profile,user" alt="">
+            </span>
+        </div>
+    </div>
+</header>
+<div class="sidebar">
+    <ul class="sidebar-menu">
+        <li class="sidebar-menu__item "><a href="bank-my-profile.html"><i> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0)">
+                <path d="M23.3469 17.5828C23.2631 17.4926 23.1726 17.4089 23.0761 17.3324L13.5765 9.16828L14.5534 8.12535C14.666 8.14157 14.7794 8.15101 14.8932 8.15367C15.3843 8.17732 15.8626 7.99216 16.2098 7.644C16.6817 7.12962 16.7761 6.33208 16.441 5.3977C16.08 4.46502 15.5083 3.62838 14.7705 2.95319C13.0291 1.31565 10.9338 0.810707 10.0089 1.797C9.61855 2.26473 9.47798 2.89214 9.63135 3.48173L5.08211 8.31884C4.48467 8.19879 3.86605 8.37452 3.42098 8.79075C2.47716 9.77705 3.13311 11.8346 4.87919 13.4721C6.02122 14.5434 7.31426 15.1285 8.32887 15.1285C8.81771 15.1521 9.29387 14.9688 9.64079 14.6236C10.0311 14.1559 10.1717 13.5285 10.0183 12.9389L10.9952 11.9101L19.7727 20.9047C20.6901 21.8918 22.2338 21.9481 23.2208 21.0308C24.2078 20.1135 24.2642 18.5698 23.3469 17.5828ZM10.679 2.44358C11.1509 1.93392 12.7224 2.33976 14.1098 3.64224C14.7438 4.21096 15.2379 4.91829 15.5539 5.70922C15.7615 6.28495 15.7473 6.75215 15.5255 6.9881C15.1858 7.22949 14.7464 7.28104 14.3599 7.12496L10.6224 3.61865C10.4391 3.243 10.4604 2.79982 10.679 2.44358ZM8.9518 13.996C8.47988 14.5057 6.90841 14.0998 5.52099 12.7973C4.13357 11.4949 3.63334 9.96587 4.10525 9.45149C4.44503 9.2101 4.88444 9.15855 5.27088 9.31463L9.01314 12.8209C9.19589 13.1972 9.17271 13.6408 8.9518 13.996ZM10.3345 11.24L9.57944 12.0517L6.00706 8.69643L10.0514 4.38786L13.6237 7.7526L11.5992 9.91396L10.3345 11.24ZM22.5334 20.145C21.9732 20.7418 21.0375 20.7775 20.4334 20.2253L11.6464 11.2259L12.9347 9.85261L22.4674 18.0309C23.0693 18.5965 23.0988 19.5429 22.5334 20.145Z"
+                      fill="black"/>
+                <path d="M9.18932 19.1861C9.18578 19.1864 9.18224 19.1866 9.1787 19.1869H9.1551V19.0265C9.12714 18.5068 8.68384 18.1078 8.16409 18.1346H1.98675C1.4706 18.1132 1.03313 18.5106 1.00517 19.0265V19.1869H0.981578C0.483003 19.1439 0.0439469 19.5131 0.000825847 20.0116C0.000530902 20.0151 0.000235956 20.0187 0 20.0222V21.8627C0.0346266 22.3619 0.467429 22.7385 0.966654 22.7039C0.971668 22.7035 0.976623 22.7032 0.981578 22.7027H9.1787C9.67728 22.7456 10.1162 22.3762 10.1591 21.8776C10.1595 21.8727 10.1599 21.8676 10.1603 21.8627V20.0222C10.1231 19.5232 9.68831 19.1489 9.18932 19.1861ZM9.21645 21.7589H0.943825V20.1308H1.47709C1.7377 20.1308 1.949 19.9195 1.949 19.6589V19.0785H8.21128V19.6542C8.21128 19.9148 8.42258 20.1261 8.68319 20.1261H9.21645V21.7589Z"
+                      fill="black"/>
+            </g>
+            <defs>
+                <clipPath id="clip0">
+                    <rect width="24" height="24" fill="white"/>
+                </clipPath>
+            </defs>
+        </svg></i><span>Мой профиль</span></a></li>
+        <li class="sidebar-menu__item with-child open">
+            <a href="#"><i></i><span>Аукционы</span></a>
+            <div class="sub-menu">
+                <a href="bank-credit-auction.html" class="sub-menu__item active">Кредитный ауцион</a>
+                <a href="deposit-auction.html" class="sub-menu__item">Депозитный ауцион</a>
+            </div>
+        </li>
+        <li class="sidebar-menu__item"><a href="moderator-call.hmtl"><i></i><span>Связь с модератором</span></a></li>
+        <li class="sidebar-menu__item"><a href="bank-settings.html"><i> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.6211 9.21534L21.4258 8.66602C21.3101 8.3423 21.1743 8.01806 21.0201 7.69627L22.1865 5.75194C22.3047 5.55516 22.2735 5.3032 22.1114 5.14111L18.8589 1.88817C18.6968 1.72556 18.4439 1.69528 18.2481 1.81298L16.3033 2.97998C15.982 2.82567 15.6578 2.68992 15.334 2.57423L14.7847 0.378891C14.729 0.156234 14.5293 0 14.2998 0H9.70022C9.47072 0 9.27103 0.156234 9.21534 0.378891L8.66602 2.57419C8.3423 2.68992 8.01806 2.82567 7.69678 2.97994L5.75194 1.81294C5.55516 1.69575 5.3032 1.72552 5.14111 1.88812L1.88869 5.14106C1.72659 5.30316 1.69533 5.55511 1.8135 5.75189L2.97998 7.69622C2.82567 8.01802 2.68992 8.3422 2.57423 8.66597L0.378891 9.21534C0.156234 9.27098 0 9.47072 0 9.70022V14.2998C0 14.5293 0.156234 14.729 0.378891 14.7847L2.57419 15.334C2.68992 15.6578 2.82567 15.982 2.97994 16.3038L1.81345 18.2481C1.69528 18.4449 1.72655 18.6968 1.88864 18.8589L5.14106 22.1114C5.30222 22.273 5.55464 22.3037 5.75189 22.1865L7.69622 21.0201C8.01802 21.1744 8.3422 21.3101 8.66597 21.4258L9.2153 23.6211C9.27098 23.8438 9.47067 24 9.70017 24H14.2998C14.5293 24 14.729 23.8438 14.7847 23.6211L15.334 21.4258C15.6577 21.3101 15.9819 21.1743 16.3037 21.0201L18.2481 22.1865C18.4448 22.3042 18.6968 22.274 18.8589 22.1114L22.1113 18.8589C22.2734 18.6968 22.3047 18.4449 22.1865 18.2481L21.02 16.3038C21.1743 15.982 21.3101 15.6578 21.4258 15.334L23.6211 14.7847C23.8437 14.729 24 14.5293 24 14.2998V9.70022C24 9.47072 23.8438 9.27098 23.6211 9.21534ZM23 13.9097L20.919 14.4302C20.7515 14.4717 20.6172 14.5972 20.5644 14.7613C20.4209 15.2056 20.2329 15.6553 20.0058 16.0982C19.9267 16.2515 19.9331 16.4351 20.022 16.5835L21.1284 18.4278L18.4277 21.1285L16.584 20.022C16.436 19.9342 16.2534 19.9273 16.0986 20.0059C15.6553 20.233 15.2055 20.421 14.7612 20.5645C14.5972 20.6173 14.4717 20.7516 14.4301 20.919L13.9096 23.0001H10.0903L9.56981 20.919C9.52833 20.7516 9.4028 20.6173 9.23873 20.5645C8.79441 20.421 8.34469 20.233 7.90134 20.0059C7.74703 19.9263 7.56347 19.9332 7.416 20.022L5.57227 21.1285L2.87156 18.4277L3.978 16.5835C4.06687 16.435 4.0732 16.2515 3.99412 16.0981C3.76706 15.6553 3.57909 15.2055 3.43552 14.7612C3.38278 14.5972 3.24848 14.4717 3.081 14.4301L0.999984 13.9097V10.0903L3.08105 9.56981C3.24853 9.52833 3.38283 9.4028 3.43556 9.23873C3.57914 8.79441 3.76711 8.34469 3.99417 7.90181C4.0733 7.74848 4.06692 7.56488 3.97805 7.41647L2.87156 5.57227L5.57227 2.87109L7.41652 3.97805C7.56497 4.06739 7.74853 4.07423 7.90186 3.99417C8.34473 3.76711 8.79445 3.57914 9.23878 3.43556C9.40284 3.38283 9.52833 3.24853 9.56986 3.08105L10.0904 0.999984H13.9097L14.4302 3.08105C14.4717 3.24853 14.5972 3.38283 14.7613 3.43556C15.2056 3.57914 15.6553 3.76711 16.0982 3.99417C16.251 4.0733 16.4351 4.06645 16.5835 3.97805L18.4278 2.87109L21.1285 5.57227L20.022 7.41652C19.9332 7.56497 19.9268 7.74853 20.0059 7.90186C20.233 8.34473 20.421 8.79445 20.5645 9.23878C20.6173 9.40284 20.7516 9.52833 20.919 9.56986L23.0001 10.0904V13.9097H23Z" fill="black"></path>
+            <path d="M12 6C8.69142 6 6 8.69142 6 12C6 15.3086 8.69142 18 12 18C15.3086 18 18 15.3086 18 12C18 8.69142 15.3086 6 12 6ZM12 17C9.24314 17 6.99998 14.7569 6.99998 12C6.99998 9.24314 9.24319 6.99998 12 6.99998C14.7568 6.99998 17 9.24319 17 12C17 14.7568 14.7569 17 12 17Z" fill="black"></path>
+        </svg></i><span>Настройки</span></a></li>
+        <li class="sidebar-menu__item blue mt-20"><a href="service-news.html"><i></i><span>Новости сервиса</span></a></li>
+    </ul>
+    <div class="sidebar-bottom-info">
+        <div class="info-block">
+            <div class="info-block-title">
+                Рыночные ставки на <br>привлеченные ресурсы
+            </div>
+            <ul class="info-block-items">
+                <li>
+                    <span>KGS</span>
+                    <span>4.5%</span>
+                </li>
+                <li>
+                    <span>KGS</span>
+                    <span>4.5%</span>
+                </li>
+                <li>
+                    <span>KGS</span>
+                    <span>4.5%</span>
+                </li>
+                <li>
+                    <span>KGS</span>
+                    <span>4.5%</span>
+                </li>
+                <li>
+                    <span>KGS</span>
+                    <span>4.5%</span>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<div class="wrapper auction-page">
+    <div class="title">Кредитный аукцион > Название аукциона</div>
+    <div class="auction-list-nav">
+        <div class="al-item active"><a href="#">Номер аукциона </a></div>
+        <div class="al-item"><a href="#">Номер аукциона </a></div>
+        <div class="al-item"><a href="#">Номер аукциона</a></div>
+    </div>
+    <div class="auc-time">
+        <div class="auc-time-title">
+            <div class="item w25"><span class="bold">Дата<br>начала</span></div>
+            <div class="item w25"><span class="bold">Дата<br>окончания</span></div>
+            <div class="item w25"><span class="bold">Условие<br>клиента</span></div>
+            <div class="item w25"><span class="bold">Стартовая<br>ставка </span></div>
+        </div>
+        <div class="auc-time-content">
+            <div class="item">01.12.19 18:00</div>
+            <div class="item">01.12.19 18:00</div>
+            <div class="item"><span class="blue-text bold">20%</span></div>
+            <div class="item"><span class="blue-text bold">23%</span></div>
+        </div>
+    </div>
+    <div class="d-flex w-100 mt-20">
+        <div class="auc int-rate">
+            <div class="auc-title">
+                <div class="item"><span class="bold">Время ставки</span></div>
+                <div class="item"><span class="bold">Банк</span></div>
+                <div class="item"><span class="bold">Ставка</span></div>
+            </div>
+            <div class="auc-content">
+                <div class="auc-item">
+                    <div class="item">01.12.19 18:00</div>
+                    <div class="item">Иванов Иван Иванович</div>
+                    <div class="item font-16">23.15%</div>
+                </div>
+                <div class="auc-item">
+                    <div class="item">01.12.19 18:00</div>
+                    <div class="item">Иванов Иван Иванович</div>
+                    <div class="item font-16">23.15%</div>
+                </div>
+                <div class="auc-item">
+                    <div class="item">01.12.19 18:00</div>
+                    <div class="item">Иванов Иван Иванович</div>
+                    <div class="item font-16">23.15%</div>
+                </div>
+                <div class="auc-item">
+                    <div class="item">01.12.19 18:00</div>
+                    <div class="item">Иванов Иван Иванович</div>
+                    <div class="item font-16">23.15%</div>
+                </div>
+                <div class="auc-item">
+                    <div class="item">01.12.19 18:00</div>
+                    <div class="item">Иванов Иван Иванович</div>
+                    <div class="item font-16">23.15%</div>
+                </div>
+                <div class="auc-item">
+                    <div class="item">01.12.19 18:00</div>
+                    <div class="item">Иванов Иван Иванович</div>
+                    <div class="item font-16">23.15%</div>
+                </div>
+                <div class="auc-item">
+                    <div class="item">01.12.19 18:00</div>
+                    <div class="item">Иванов Иван Иванович</div>
+                    <div class="item font-16">23.15%</div>
+                </div>
+                <div class="auc-item">
+                    <div class="item">01.12.19 18:00</div>
+                    <div class="item">Иванов Иван Иванович</div>
+                    <div class="item font-16">23.15%</div>
+                </div>
+            </div>
+            <div class="add-rate">
+                <span class="auc-select-span">Ваша ставка</span>
+                <select class="auc-select" >
+                    <option value="" disabled selected>Выберите ставку</option>
+                    <option value="">20.00%</option>
+                    <option value="">20.01%</option>
+                    <option value="">20.02%</option>
+                    <option value="">20.15%</option>
+                    <option value="">20.20%</option>
+                    <option value="">20.25%</option>
+                    <option value="">20.30%</option>
+                    <option value="">20.35%</option>
+                    <option value="">20.35%</option>
+                    <option value="">20.35%</option>
+                    <option value="">20.35%</option>
+                    <option value="">20.35%</option>
+                    <option value="">20.35%</option>
+                    <option value="">20.35%</option>
+                    <option value="">20.35%</option>
+                    <option value="">20.35%</option>
+                    <option value="">20.35%</option>
+                    <option value="">20.35%</option>
+                    <option value="">20.35%</option>
+                    <option value="">20.35%</option>
+                    <option value="">20.35%</option>
+                    <option value="">20.35%</option>
+                    <option value="">20.35%</option>
+                    <option value="">20.35%</option>
+                    <option value="">20.35%</option>
+                    <option value="">20.35%</option>
+                    <option value="">20.35%</option>
+                    <option value="">20.35%</option>
+                    <option value="">20.35%</option>
+                    <option value="">20.35%</option>
+                    <option value="">20.35%</option>
+                    <option value="">20.35%</option>
+                    <option value="">20.35%</option>
+                    <option value="">20.35%</option>
+                    <option value="">20.35%</option>
+                    <option value="">20.35%</option>
+                    <option value="">20.35%</option>
+                </select>
+                <button class="btn main-btn">Сделать ставку</button>
+            </div>
+        </div>
+        <div class="best-rate">
+            <span>Лучшая ставка</span>
+            <span class="count">20.75%</span>
+        </div>
+    </div>
+</div>
+<script src="../libs/jquery/jquery-3.3.1.min.js"></script>
+<script src="../libs/niceselect/jquery.nice-select.min.js"></script>
+<script src="../js/common.js"></script>
+</body>
+</html>
