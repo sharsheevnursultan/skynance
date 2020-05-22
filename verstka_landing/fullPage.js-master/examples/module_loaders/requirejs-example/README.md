@@ -24,7 +24,7 @@ var require = {
 ### HTML file
 
 ```html
-<!-- index.html  -->
+<!-- main.html  -->
 <script src="src/require.config.js"></script>
 <script data-main="src/main" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.5/require.min.js"></script>
 ```
