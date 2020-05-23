@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Заполненная заявка</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<div id="preloader">
+    <div id="preloader_preload"></div>
+</div>
+<script type="text/javascript">
+    var preloader = document.getElementById("preloader_preload");
+
+    function fadeOutnojquery(el) {
+        el.style.opacity = 1;
+        var interpreloader = setInterval(function () {
+            el.style.opacity = el.style.opacity - 0.05;
+            if (el.style.opacity <= 0.05) {
+                clearInterval(interpreloader);
+                preloader.style.display = "none";
+            }
+        }, 16);
+    }
+
+    window.onload = function () {
+        setTimeout(function () {
+            fadeOutnojquery(preloader);
+        }, 100);
+    };
+</script>
+<header class="header">
+    <div class="container flex">
+        <div class="logo"><a href="#"><img src="../img/skynance-logo.png" alt=""></a></div>
+        <div class="top-menu">
+            <ul>
+                <li class="top-menu__item"><a href="../client/client-active-auction.html">Кредитный аукцион</a></li>
+                <li class="top-menu__item"><a href="about-us.html">Как участвовать</a></li>
+                <li class="top-menu__item"><a href="services.html">Документы</a></li>
+                <li class="top-menu__item"><a href="faq.html">Вопросы и Ответы</a></li>
+                <li class="top-menu__item mr-0"><a href="contact.html">Партнерам</a></li>
+            </ul>
+        </div>
+        <div class="auth">
+            <a href="">
+                <span>Имя Фамилия</span>
+            </a>
+            <span class="header-user-photo">
+                <img class="header-user-photo" src="https://source.unsplash.com/54x54?profile,user" alt="">
+            </span>
+        </div>
+    </div>
+</header>
+<div class="sidebar">
+    <ul class="sidebar-menu">
+        <li class="sidebar-menu__item "><a href="../client/client-active-auction.html"><i>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                    <path d="M23.3469 17.5828C23.2631 17.4926 23.1726 17.4089 23.0761 17.3324L13.5765 9.16828L14.5534 8.12535C14.666 8.14157 14.7794 8.15101 14.8932 8.15367C15.3843 8.17732 15.8626 7.99216 16.2098 7.644C16.6817 7.12962 16.7761 6.33208 16.441 5.3977C16.08 4.46502 15.5083 3.62838 14.7705 2.95319C13.0291 1.31565 10.9338 0.810707 10.0089 1.797C9.61855 2.26473 9.47798 2.89214 9.63135 3.48173L5.08211 8.31884C4.48467 8.19879 3.86605 8.37452 3.42098 8.79075C2.47716 9.77705 3.13311 11.8346 4.87919 13.4721C6.02122 14.5434 7.31426 15.1285 8.32887 15.1285C8.81771 15.1521 9.29387 14.9688 9.64079 14.6236C10.0311 14.1559 10.1717 13.5285 10.0183 12.9389L10.9952 11.9101L19.7727 20.9047C20.6901 21.8918 22.2338 21.9481 23.2208 21.0308C24.2078 20.1135 24.2642 18.5698 23.3469 17.5828ZM10.679 2.44358C11.1509 1.93392 12.7224 2.33976 14.1098 3.64224C14.7438 4.21096 15.2379 4.91829 15.5539 5.70922C15.7615 6.28495 15.7473 6.75215 15.5255 6.9881C15.1858 7.22949 14.7464 7.28104 14.3599 7.12496L10.6224 3.61865C10.4391 3.243 10.4604 2.79982 10.679 2.44358ZM8.9518 13.996C8.47988 14.5057 6.90841 14.0998 5.52099 12.7973C4.13357 11.4949 3.63334 9.96587 4.10525 9.45149C4.44503 9.2101 4.88444 9.15855 5.27088 9.31463L9.01314 12.8209C9.19589 13.1972 9.17271 13.6408 8.9518 13.996ZM10.3345 11.24L9.57944 12.0517L6.00706 8.69643L10.0514 4.38786L13.6237 7.7526L11.5992 9.91396L10.3345 11.24ZM22.5334 20.145C21.9732 20.7418 21.0375 20.7775 20.4334 20.2253L11.6464 11.2259L12.9347 9.85261L22.4674 18.0309C23.0693 18.5965 23.0988 19.5429 22.5334 20.145Z"
+                          fill="black"/>
+                    <path d="M9.18932 19.1861C9.18578 19.1864 9.18224 19.1866 9.1787 19.1869H9.1551V19.0265C9.12714 18.5068 8.68384 18.1078 8.16409 18.1346H1.98675C1.4706 18.1132 1.03313 18.5106 1.00517 19.0265V19.1869H0.981578C0.483003 19.1439 0.0439469 19.5131 0.000825847 20.0116C0.000530902 20.0151 0.000235956 20.0187 0 20.0222V21.8627C0.0346266 22.3619 0.467429 22.7385 0.966654 22.7039C0.971668 22.7035 0.976623 22.7032 0.981578 22.7027H9.1787C9.67728 22.7456 10.1162 22.3762 10.1591 21.8776C10.1595 21.8727 10.1599 21.8676 10.1603 21.8627V20.0222C10.1231 19.5232 9.68831 19.1489 9.18932 19.1861ZM9.21645 21.7589H0.943825V20.1308H1.47709C1.7377 20.1308 1.949 19.9195 1.949 19.6589V19.0785H8.21128V19.6542C8.21128 19.9148 8.42258 20.1261 8.68319 20.1261H9.21645V21.7589Z"
+                          fill="black"/>
+                </g>
+                <defs>
+                    <clipPath id="clip0">
+                        <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                </defs>
+            </svg>
+        </i><span>Мои аукционы</span></a></li>
+        <li class="sidebar-menu__item"><a href="../client/client-my-bids.html"><i>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                    <path d="M20.7255 0.461914H6.1938C4.38647 0.464578 2.92198 1.92907 2.91931 3.7364V17.0087C1.12156 17.205 -0.176671 18.8215 0.0196288 20.6193C0.201518 22.2851 1.6117 23.5448 3.28745 23.5383H15.126C16.9333 23.5356 18.3978 22.0711 18.4005 20.2638V7.01088H20.7255C22.534 7.01088 24 5.54487 24 3.7364C24 1.92792 22.5339 0.461914 20.7255 0.461914ZM12.8057 22.5695H3.28745C2.01272 22.5695 0.979329 21.5361 0.979329 20.2614C0.979329 18.9867 2.01272 17.9533 3.28745 17.9533H12.8057C11.534 19.2292 11.534 21.2935 12.8057 22.5695ZM17.4365 3.73622V20.2638C17.4365 21.5372 16.4042 22.5695 15.1308 22.5695C13.8574 22.5695 12.8251 21.5372 12.8251 20.2638C12.8251 18.9904 13.8574 17.9581 15.1308 17.9581C15.3983 17.9581 15.6152 17.7412 15.6152 17.4737C15.6152 17.2062 15.3983 16.9893 15.1308 16.9893H3.90747V3.7364C3.91008 2.47159 4.92905 1.44396 6.1938 1.4307H18.3859C17.7769 2.04333 17.4355 2.87236 17.4365 3.73622ZM20.2411 6.0421H18.4053V5.2477H20.2411V6.0421ZM21.2099 5.99366V5.98881V4.76331C21.2099 4.4958 20.993 4.27891 20.7255 4.27891H18.4053V3.7364C18.4087 2.46299 19.4438 1.43348 20.7172 1.43687C21.9906 1.44026 23.0201 2.47535 23.0167 3.74875C23.0138 4.82761 22.2632 5.76018 21.2099 5.99366Z"
+                          fill="black"/>
+                    <path d="M14.1326 5.26709H7.04591C6.77841 5.26709 6.56152 5.48398 6.56152 5.75148C6.56152 6.01899 6.77841 6.23587 7.04591 6.23587H14.1326C14.4001 6.23587 14.617 6.01899 14.617 5.75148C14.617 5.48398 14.4001 5.26709 14.1326 5.26709Z"
+                          fill="black"/>
+                    <path d="M14.1326 8.72559H7.04591C6.77841 8.72559 6.56152 8.94247 6.56152 9.20998C6.56152 9.47748 6.77841 9.69437 7.04591 9.69437H14.1326C14.4001 9.69437 14.617 9.47748 14.617 9.20998C14.617 8.94247 14.4001 8.72559 14.1326 8.72559Z"
+                          fill="black"/>
+                    <path d="M14.1326 12.1841H7.04591C6.77841 12.1841 6.56152 12.401 6.56152 12.6685C6.56152 12.936 6.77841 13.1529 7.04591 13.1529H14.1326C14.4001 13.1529 14.617 12.936 14.617 12.6685C14.617 12.401 14.4001 12.1841 14.1326 12.1841Z"
+                          fill="black"/>
+                </g>
+                <defs>
+                    <clipPath id="clip0">
+                        <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                </defs>
+            </svg>
+        </i><span>Мои заявки</span></a></li>
+        <li class="sidebar-menu__item"><a href="bid-history.hmtl"><i>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.4841 3.51592C18.3185 1.35032 15.3121 0 12 0C8.6879 0 5.68153 1.35032 3.51592 3.51592C1.35032 5.68153 0 8.6879 0 12C0 15.3121 1.35032 18.3185 3.51592 20.4841C5.68153 22.6497 8.6879 24 12 24C15.3121 24 18.3185 22.6497 20.4841 20.4841C22.6497 18.3185 24 15.3121 24 12C24 8.6879 22.6497 5.68153 20.4841 3.51592ZM19.8217 19.8217C17.8344 21.8089 15.0573 23.0573 12 23.0573C8.94267 23.0573 6.19108 21.8089 4.20382 19.8217C2.19108 17.8089 0.968153 15.0573 0.968153 12C0.968153 8.94267 2.19108 6.19108 4.20382 4.20382C6.19108 2.19108 8.94267 0.968153 12 0.968153C15.0573 0.968153 17.8089 2.21656 19.8217 4.20382C21.8089 6.19108 23.0573 8.96815 23.0573 12C23.0573 15.0573 21.8089 17.8089 19.8217 19.8217Z"
+                      fill="black"/>
+                <path d="M18.624 5.37562C16.9425 3.69409 14.5985 2.62402 11.9998 2.62402C9.42657 2.62402 7.08262 3.66861 5.37562 5.37562C3.69409 7.05715 2.62402 9.40109 2.62402 11.9998C2.62402 14.5985 3.69409 16.917 5.37562 18.624C7.08262 20.3056 9.42657 21.3501 11.9998 21.3501C14.5731 21.3501 16.917 20.3056 18.624 18.5985C20.3056 16.917 21.3756 14.5731 21.3756 11.9743C21.3756 9.37562 20.3056 7.08262 18.624 5.37562ZM17.9361 17.9361C16.5094 19.3629 14.5985 20.2546 12.4839 20.382V19.1845C12.4839 18.9298 12.2801 18.7005 11.9998 18.7005C11.745 18.7005 11.5157 18.9043 11.5157 19.1845V20.382C9.37562 20.2546 7.46479 19.3629 6.06351 17.9361C4.63676 16.5094 3.74504 14.5985 3.61765 12.4839H4.81511C5.06988 12.4839 5.29918 12.2801 5.29918 11.9998C5.29918 11.745 5.09536 11.5157 4.81511 11.5157H3.61765C3.71956 9.40109 4.63676 7.46479 6.06351 6.06351C7.49027 4.63676 9.40109 3.74504 11.5157 3.61765V4.81511C11.5157 5.06988 11.7196 5.29918 11.9998 5.29918C12.2546 5.29918 12.4839 5.09536 12.4839 4.81511V3.61765C14.624 3.74504 16.5349 4.63676 17.9361 6.06351C19.3629 7.49027 20.2546 9.40109 20.382 11.5157H19.1845C18.9298 11.5157 18.7005 11.7196 18.7005 11.9998C18.7005 12.2546 18.9043 12.4839 19.1845 12.4839H20.382C20.2546 14.624 19.3629 16.5349 17.9361 17.9361Z"
+                      fill="black"/>
+                <path d="M12.4585 10.5731V6.675C12.4585 6.42022 12.2547 6.19092 11.9745 6.19092C11.7197 6.19092 11.4904 6.39474 11.4904 6.675V10.5731C11.2866 10.6495 11.0827 10.7514 10.9299 10.9043L10.9044 10.9298C10.7515 11.0826 10.6241 11.2865 10.5477 11.5158H7.64326C7.38848 11.5158 7.15918 11.7196 7.15918 11.9998C7.15918 12.2546 7.38848 12.4839 7.64326 12.4839H10.5477C10.6241 12.7132 10.7515 12.917 10.9044 13.0699C11.1847 13.3502 11.5668 13.503 11.9745 13.503C12.3821 13.503 12.7643 13.3247 13.0445 13.0699C13.3248 12.7897 13.4776 12.4075 13.4776 11.9998C13.4776 11.5922 13.2993 11.21 13.0445 10.9298C12.8917 10.7769 12.6878 10.6495 12.4585 10.5731ZM12.3821 12.382C12.2802 12.4839 12.1528 12.5349 11.9999 12.5349C11.8471 12.5349 11.6942 12.4839 11.6178 12.382C11.5159 12.2801 11.4649 12.1527 11.4649 11.9998C11.4649 11.847 11.5159 11.7196 11.6178 11.6177C11.6178 11.6177 11.6178 11.6177 11.6433 11.5922C11.7452 11.4903 11.8726 11.4393 12.0254 11.4393C12.1783 11.4393 12.3311 11.4903 12.4076 11.5922C12.5095 11.6941 12.5604 11.8215 12.5604 11.9744C12.5604 12.1527 12.484 12.3056 12.3821 12.382Z"
+                      fill="black"/>
+            </svg>
+        </i><span>История заявок</span></a></li>
+        <li class="sidebar-menu__item"><a href="../client/client-my-profile-individual.html"><i>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 0C5.38331 0 0 5.38331 0 12C0 18.6167 5.38331 24 12 24C18.6167 24 24 18.6167 24 12C24 5.38331 18.6167 0 12 0ZM12 23C8.7112 23 5.763 21.5418 3.74555 19.2466C3.80306 19.2118 3.86105 19.1739 3.91795 19.1445C5.8237 18.166 8.77294 17 12 17C15.2271 17 18.1763 18.166 20.0815 19.1441C20.1387 19.1736 20.1968 19.2115 20.2545 19.2465C18.237 21.5417 15.2888 23 12 23ZM20.5391 18.2549C18.5352 17.2261 15.4268 16 12 16C8.57325 16 5.46483 17.2261 3.46045 18.2554C3.34481 18.3149 3.23067 18.3833 3.11503 18.4585C1.79119 16.6423 0.999984 14.4144 0.999984 12C0.999984 5.93456 5.93456 0.999984 12 0.999984C18.0654 0.999984 23 5.93456 23 12C23 14.4144 22.2089 16.6424 20.885 18.4585C20.7693 18.3833 20.655 18.3146 20.5391 18.2549Z"
+                      fill="black"/>
+                <path d="M12 3.5C8.82963 3.5 6.25 6.07958 6.25 9.25002C6.25 12.4205 8.82963 15 12 15C15.1704 15 17.75 12.4204 17.75 9.24997C17.75 6.07953 15.1704 3.5 12 3.5ZM12 14C9.38088 14 7.25003 11.8692 7.25003 9.25002C7.25003 6.63088 9.38088 4.49998 12 4.49998C14.6192 4.49998 16.75 6.63083 16.75 9.24997C16.75 11.8691 14.6192 14 12 14Z"
+                      fill="black"/>
+            </svg>
+        </i><span>Мой профиль</span></a></li>
+        <li class="sidebar-menu__item"><a href="my-settings.html"><i>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23.6211 9.21534L21.4258 8.66602C21.3101 8.3423 21.1743 8.01806 21.0201 7.69627L22.1865 5.75194C22.3047 5.55516 22.2735 5.3032 22.1114 5.14111L18.8589 1.88817C18.6968 1.72556 18.4439 1.69528 18.2481 1.81298L16.3033 2.97998C15.982 2.82567 15.6578 2.68992 15.334 2.57423L14.7847 0.378891C14.729 0.156234 14.5293 0 14.2998 0H9.70022C9.47072 0 9.27103 0.156234 9.21534 0.378891L8.66602 2.57419C8.3423 2.68992 8.01806 2.82567 7.69678 2.97994L5.75194 1.81294C5.55516 1.69575 5.3032 1.72552 5.14111 1.88812L1.88869 5.14106C1.72659 5.30316 1.69533 5.55511 1.8135 5.75189L2.97998 7.69622C2.82567 8.01802 2.68992 8.3422 2.57423 8.66597L0.378891 9.21534C0.156234 9.27098 0 9.47072 0 9.70022V14.2998C0 14.5293 0.156234 14.729 0.378891 14.7847L2.57419 15.334C2.68992 15.6578 2.82567 15.982 2.97994 16.3038L1.81345 18.2481C1.69528 18.4449 1.72655 18.6968 1.88864 18.8589L5.14106 22.1114C5.30222 22.273 5.55464 22.3037 5.75189 22.1865L7.69622 21.0201C8.01802 21.1744 8.3422 21.3101 8.66597 21.4258L9.2153 23.6211C9.27098 23.8438 9.47067 24 9.70017 24H14.2998C14.5293 24 14.729 23.8438 14.7847 23.6211L15.334 21.4258C15.6577 21.3101 15.9819 21.1743 16.3037 21.0201L18.2481 22.1865C18.4448 22.3042 18.6968 22.274 18.8589 22.1114L22.1113 18.8589C22.2734 18.6968 22.3047 18.4449 22.1865 18.2481L21.02 16.3038C21.1743 15.982 21.3101 15.6578 21.4258 15.334L23.6211 14.7847C23.8437 14.729 24 14.5293 24 14.2998V9.70022C24 9.47072 23.8438 9.27098 23.6211 9.21534ZM23 13.9097L20.919 14.4302C20.7515 14.4717 20.6172 14.5972 20.5644 14.7613C20.4209 15.2056 20.2329 15.6553 20.0058 16.0982C19.9267 16.2515 19.9331 16.4351 20.022 16.5835L21.1284 18.4278L18.4277 21.1285L16.584 20.022C16.436 19.9342 16.2534 19.9273 16.0986 20.0059C15.6553 20.233 15.2055 20.421 14.7612 20.5645C14.5972 20.6173 14.4717 20.7516 14.4301 20.919L13.9096 23.0001H10.0903L9.56981 20.919C9.52833 20.7516 9.4028 20.6173 9.23873 20.5645C8.79441 20.421 8.34469 20.233 7.90134 20.0059C7.74703 19.9263 7.56347 19.9332 7.416 20.022L5.57227 21.1285L2.87156 18.4277L3.978 16.5835C4.06687 16.435 4.0732 16.2515 3.99412 16.0981C3.76706 15.6553 3.57909 15.2055 3.43552 14.7612C3.38278 14.5972 3.24848 14.4717 3.081 14.4301L0.999984 13.9097V10.0903L3.08105 9.56981C3.24853 9.52833 3.38283 9.4028 3.43556 9.23873C3.57914 8.79441 3.76711 8.34469 3.99417 7.90181C4.0733 7.74848 4.06692 7.56488 3.97805 7.41647L2.87156 5.57227L5.57227 2.87109L7.41652 3.97805C7.56497 4.06739 7.74853 4.07423 7.90186 3.99417C8.34473 3.76711 8.79445 3.57914 9.23878 3.43556C9.40284 3.38283 9.52833 3.24853 9.56986 3.08105L10.0904 0.999984H13.9097L14.4302 3.08105C14.4717 3.24853 14.5972 3.38283 14.7613 3.43556C15.2056 3.57914 15.6553 3.76711 16.0982 3.99417C16.251 4.0733 16.4351 4.06645 16.5835 3.97805L18.4278 2.87109L21.1285 5.57227L20.022 7.41652C19.9332 7.56497 19.9268 7.74853 20.0059 7.90186C20.233 8.34473 20.421 8.79445 20.5645 9.23878C20.6173 9.40284 20.7516 9.52833 20.919 9.56986L23.0001 10.0904V13.9097H23Z"
+                      fill="black"/>
+                <path d="M12 6C8.69142 6 6 8.69142 6 12C6 15.3086 8.69142 18 12 18C15.3086 18 18 15.3086 18 12C18 8.69142 15.3086 6 12 6ZM12 17C9.24314 17 6.99998 14.7569 6.99998 12C6.99998 9.24314 9.24319 6.99998 12 6.99998C14.7568 6.99998 17 9.24319 17 12C17 14.7568 14.7569 17 12 17Z"
+                      fill="black"/>
+            </svg>
+        </i><span>Настройки</span></a></li>
+        <li class="sidebar-menu__item blue active"><a href="../client_request/new-bid.html"><i>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                    <path d="M7.39019 4.80996C7.18267 4.80996 7.01439 4.97819 7.01439 5.18575C7.01439 5.64161 6.64352 6.01249 6.18766 6.01249C5.7318 6.01249 5.36092 5.64161 5.36092 5.18575C5.36092 4.72989 5.7318 4.35902 6.18766 4.35902C6.39517 4.35902 6.56345 4.19078 6.56345 3.98322C6.56345 3.77566 6.39522 3.60742 6.18766 3.60742C5.31737 3.60742 4.60938 4.31547 4.60938 5.18571C4.60938 6.05594 5.31742 6.76399 6.18766 6.76399C7.05789 6.76399 7.76594 6.05594 7.76594 5.18571C7.76598 4.97819 7.5977 4.80996 7.39019 4.80996Z"
+                          fill="black"/>
+                    <path d="M7.39019 9.21913C7.18267 9.21913 7.01439 9.38737 7.01439 9.59493C7.01439 10.0508 6.64352 10.4217 6.18766 10.4217C5.7318 10.4217 5.36092 10.0508 5.36092 9.59493C5.36092 9.13907 5.7318 8.7682 6.18766 8.7682C6.39517 8.7682 6.56345 8.59996 6.56345 8.3924C6.56345 8.18484 6.39522 8.0166 6.18766 8.0166C5.31737 8.0166 4.60938 8.72465 4.60938 9.59488C4.60938 10.4651 5.31742 11.1732 6.18766 11.1732C7.05789 11.1732 7.76594 10.4651 7.76594 9.59488C7.76598 9.38741 7.5977 9.21913 7.39019 9.21913Z"
+                          fill="black"/>
+                    <path d="M11.7998 10.021H8.99396C8.78645 10.021 8.61816 10.1892 8.61816 10.3968C8.61816 10.6044 8.7864 10.7726 8.99396 10.7726H11.7998C12.0073 10.7726 12.1756 10.6044 12.1756 10.3968C12.1756 10.1892 12.0074 10.021 11.7998 10.021Z"
+                          fill="black"/>
+                    <path d="M11.7998 8.41748H8.99396C8.78645 8.41748 8.61816 8.58571 8.61816 8.79328C8.61816 9.00084 8.7864 9.16907 8.99396 9.16907H11.7998C12.0073 9.16907 12.1756 9.00084 12.1756 8.79328C12.1756 8.58571 12.0074 8.41748 11.7998 8.41748Z"
+                          fill="black"/>
+                    <path d="M10.9981 14.4302H8.99396C8.78645 14.4302 8.61816 14.5984 8.61816 14.806C8.61816 15.0135 8.7864 15.1818 8.99396 15.1818H10.9981C11.2057 15.1818 11.3739 15.0135 11.3739 14.806C11.3739 14.5984 11.2057 14.4302 10.9981 14.4302Z"
+                          fill="black"/>
+                    <path d="M11.7998 12.8267H8.99396C8.78645 12.8267 8.61816 12.9949 8.61816 13.2025C8.61816 13.41 8.7864 13.5783 8.99396 13.5783H11.7998C12.0073 13.5783 12.1756 13.41 12.1756 13.2025C12.1756 12.9949 12.0074 12.8267 11.7998 12.8267Z"
+                          fill="black"/>
+                    <path d="M15.4074 5.61182H8.99396C8.78645 5.61182 8.61816 5.78005 8.61816 5.98761C8.61816 6.19518 8.7864 6.36341 8.99396 6.36341H15.4073C15.6148 6.36341 15.7831 6.19518 15.7831 5.98761C15.7831 5.78005 15.6149 5.61182 15.4074 5.61182Z"
+                          fill="black"/>
+                    <path d="M13.804 4.0083H8.99396C8.78645 4.0083 8.61816 4.17654 8.61816 4.3841C8.61816 4.59166 8.7864 4.75989 8.99396 4.75989H13.804C14.0115 4.75989 14.1798 4.59166 14.1798 4.3841C14.1798 4.17654 14.0116 4.0083 13.804 4.0083Z"
+                          fill="black"/>
+                    <path d="M7.39019 13.6283C7.18267 13.6283 7.01439 13.7965 7.01439 14.0041C7.01439 14.46 6.64352 14.8308 6.18766 14.8308C5.7318 14.8308 5.36092 14.46 5.36092 14.0041C5.36092 13.5483 5.7318 13.1774 6.18766 13.1774C6.39517 13.1774 6.56345 13.0091 6.56345 12.8016C6.56345 12.594 6.39522 12.4258 6.18766 12.4258C5.31737 12.4258 4.60938 13.1338 4.60938 14.0041C4.60938 14.8743 5.31742 15.5823 6.18766 15.5823C7.05789 15.5823 7.76594 14.8743 7.76594 14.0041C7.76598 13.7965 7.5977 13.6283 7.39019 13.6283Z"
+                          fill="black"/>
+                    <path d="M17.0099 0H3.38155C2.73234 0 2.2041 0.528188 2.2041 1.17745V18.0125C2.2041 18.6618 2.73229 19.19 3.38155 19.19H10.1958C10.4033 19.19 10.5716 19.0217 10.5716 18.8142C10.5716 18.6067 10.4033 18.4384 10.1958 18.4384H3.38155C3.14671 18.4384 2.95565 18.2473 2.95565 18.0125V1.17745C2.95565 0.942609 3.14671 0.751547 3.38155 0.751547H17.0099C17.2448 0.751547 17.4359 0.942609 17.4359 1.17745V13.6034C17.4359 13.8109 17.6041 13.9792 17.8116 13.9792C18.0192 13.9792 18.1874 13.811 18.1874 13.6034V1.17745C18.1874 0.528188 17.6592 0 17.0099 0Z"
+                          fill="black"/>
+                    <path d="M20.5587 15.2385C20.2094 15.2037 19.8603 15.3027 19.584 15.5125C19.364 15.1432 18.9887 14.8812 18.5545 14.8377C18.2051 14.8029 17.8561 14.9019 17.5798 15.1116C17.3598 14.7424 16.9845 14.4804 16.5503 14.4369C16.2836 14.4103 16.0172 14.4616 15.7832 14.5807V9.79518C15.7832 9.40663 15.6179 9.03416 15.3296 8.77331C15.0415 8.51268 14.6533 8.38546 14.2645 8.42437C13.5708 8.49384 13.0274 9.12107 13.0274 9.85237V14.65L11.9228 15.7547C11.3358 16.3417 11.0988 17.1746 11.289 17.9827L12.1276 21.5469C12.4674 22.9912 13.741 23.9999 15.2247 23.9999H18.6141C20.3684 23.9999 21.7957 22.5726 21.7957 20.8182V16.6666C21.7957 15.9352 21.2524 15.308 20.5587 15.2385ZM21.0441 20.8181C21.0441 22.158 19.954 23.2482 18.6141 23.2482H15.2247C14.0915 23.2482 13.1188 22.4778 12.8592 21.3747L12.0206 17.8104C11.8904 17.2575 12.0526 16.6876 12.4542 16.286L13.0274 15.7128V17.0102C13.0274 17.2177 13.1957 17.386 13.4032 17.386C13.6108 17.386 13.779 17.2177 13.779 17.0102V9.85232C13.779 9.5024 14.0252 9.20362 14.3395 9.17221C14.52 9.15407 14.6926 9.21041 14.8254 9.3306C14.9565 9.44924 15.0317 9.6186 15.0317 9.79523V16.409C15.0317 16.6165 15.1999 16.7848 15.4075 16.7848C15.615 16.7848 15.7833 16.6166 15.7833 16.409V15.8077C15.7833 15.6311 15.8584 15.4618 15.9896 15.3431C16.1224 15.2229 16.295 15.1665 16.4755 15.1847C16.7897 15.2162 17.0359 15.515 17.0359 15.8649V16.8097C17.0359 17.0173 17.2041 17.1855 17.4117 17.1855C17.6192 17.1855 17.7875 17.0173 17.7875 16.8097V16.2085C17.7875 16.0319 17.8626 15.8625 17.9938 15.7439C18.1266 15.6237 18.2992 15.5673 18.4797 15.5855C18.794 15.6169 19.0401 15.9157 19.0401 16.2656V17.2105C19.0401 17.418 19.2084 17.5863 19.4159 17.5863C19.6235 17.5863 19.7917 17.4181 19.7917 17.2105V16.6093C19.7917 16.4326 19.8669 16.2633 19.998 16.1446C20.1309 16.0245 20.3033 15.9681 20.4839 15.9863C20.7982 16.0177 21.0444 16.3165 21.0444 16.6664V20.8181H21.0441Z"
+                          fill="black"/>
+                </g>
+                <defs>
+                    <clipPath id="clip0">
+                        <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                </defs>
+            </svg>
+        </i><span>Подать заявку</span></a></li>
+        <li class="sidebar-menu__item blue"><a href="service-news.html"><i>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                    <path d="M21.3812 12.2319H14.2714C14.0114 12.2319 13.8008 12.4427 13.8008 12.7025C13.8008 12.9623 14.0114 13.1731 14.2714 13.1731H21.3812C21.641 13.1731 21.8518 12.9623 21.8518 12.7025C21.8518 12.4427 21.6412 12.2319 21.3812 12.2319Z"
+                          fill="black"/>
+                    <path d="M21.3812 17.6743H14.2714C14.0114 17.6743 13.8008 17.8851 13.8008 18.1449C13.8008 18.4049 14.0114 18.6155 14.2714 18.6155H21.3812C21.641 18.6155 21.8518 18.4049 21.8518 18.1449C21.8518 17.8851 21.6412 17.6743 21.3812 17.6743Z"
+                          fill="black"/>
+                    <path d="M6.90125 18.6157H12.3439C12.6037 18.6157 12.8145 18.4052 12.8145 18.1452V12.7025C12.8145 12.4427 12.6037 12.2319 12.3439 12.2319H6.90125C6.64142 12.2319 6.43066 12.4427 6.43066 12.7025V18.1452C6.43066 18.4052 6.64142 18.6157 6.90125 18.6157ZM7.37183 13.1731H11.8733V17.6746H7.37183V13.1731Z"
+                          fill="black"/>
+                    <path d="M23.4826 1.45312H3.7284C3.46839 1.45312 3.25782 1.66388 3.25782 1.92371V4.62745H0.423707C0.16388 4.62745 -0.046875 4.83802 -0.046875 5.09803V20.4275C-0.046875 21.5981 0.905458 22.5504 2.07605 22.5504H21.8302C23.0008 22.5504 23.9532 21.5981 23.9532 20.4275V1.92371C23.9532 1.6637 23.7424 1.45312 23.4826 1.45312ZM3.25782 10.2836H2.54664V8.7303H3.25764V10.2836H3.25782ZM0.894289 20.4275V5.56861H3.25782V7.78914H2.07605C1.81623 7.78914 1.60547 7.99989 1.60547 8.25972V10.7542C1.60547 11.014 1.81623 11.2248 2.07605 11.2248H3.25764V13.0049H2.07605C1.81623 13.0049 1.60547 13.2157 1.60547 13.4755C1.60547 13.7353 1.81623 13.9461 2.07605 13.9461H3.25764V15.7262H2.07605C1.81623 15.7262 1.60547 15.937 1.60547 16.1968C1.60547 16.4568 1.81623 16.6676 2.07605 16.6676H3.25764V18.4475H2.07605C1.81623 18.4475 1.60547 18.6583 1.60547 18.9183C1.60547 19.1781 1.81623 19.3889 2.07605 19.3889H3.25764V20.4275C3.25764 21.0791 2.72754 21.6092 2.07605 21.6092C1.42438 21.6092 0.894289 21.0791 0.894289 20.4275ZM23.012 20.4275C23.012 21.0791 22.4819 21.6092 21.8302 21.6092H3.83881C4.07264 21.2617 4.1988 20.8464 4.1988 20.4275V2.39429H23.012V20.4275Z"
+                          fill="black"/>
+                    <path d="M8.72058 7.50397H18.5321C18.7921 7.50397 19.0027 7.29322 19.0027 7.03339V4.53894C19.0027 4.27911 18.7921 4.06836 18.5321 4.06836H8.72058C8.46075 4.06836 8.25 4.27911 8.25 4.53894V7.03339C8.25 7.29322 8.46075 7.50397 8.72058 7.50397ZM9.19116 5.00952H18.0615V6.56281H9.19116V5.00952Z"
+                          fill="black"/>
+                    <path d="M6.90124 10.3381H8.72058C8.98041 10.3381 9.19116 10.1274 9.19116 9.86755C9.19116 9.60773 8.98041 9.39697 8.72058 9.39697H6.90124C6.64142 9.39697 6.43066 9.60773 6.43066 9.86755C6.43066 10.1274 6.64142 10.3381 6.90124 10.3381Z"
+                          fill="black"/>
+                    <path d="M10.9928 9.60665C10.8829 9.44222 10.6775 9.3633 10.4856 9.41237C10.2977 9.46035 10.1571 9.62148 10.134 9.81411C10.1111 10.0069 10.2153 10.199 10.3881 10.2869C10.5632 10.3759 10.7794 10.3448 10.9234 10.2113C11.0898 10.0567 11.1187 9.79489 10.9928 9.60665Z"
+                          fill="black"/>
+                    <path d="M12.0049 9.86755C12.0049 10.1274 12.2156 10.3381 12.4755 10.3381H21.3821C21.6419 10.3381 21.8527 10.1274 21.8527 9.86755C21.8527 9.60773 21.6419 9.39697 21.3821 9.39697H12.4755C12.2156 9.39697 12.0049 9.60773 12.0049 9.86755Z"
+                          fill="black"/>
+                    <path d="M21.2019 15.8551C21.383 15.9302 21.5985 15.8822 21.7302 15.7368C21.8622 15.5911 21.8889 15.3724 21.7963 15.199C21.7027 15.024 21.5028 14.9238 21.3063 14.9562C21.1093 14.9887 20.9498 15.1465 20.9172 15.3439C20.882 15.5566 21.0025 15.7727 21.2019 15.8551Z"
+                          fill="black"/>
+                    <path d="M14.2714 15.8915H19.5084C19.7682 15.8915 19.979 15.6808 19.979 15.4208C19.979 15.161 19.7682 14.9502 19.5084 14.9502H14.2714C14.0114 14.9502 13.8008 15.161 13.8008 15.4208C13.8008 15.6808 14.0114 15.8915 14.2714 15.8915Z"
+                          fill="black"/>
+                </g>
+                <defs>
+                    <clipPath id="clip0">
+                        <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                </defs>
+            </svg>
+        </i><span>Новости сервиса</span></a></li>
+    </ul>
+    <div class="sidebar-bottom-info">
+        <div class="info-block">
+            <div class="info-block-title">
+                Рыночные ставки на <br>привлеченные ресурсы
+            </div>
+            <ul class="info-block-items">
+                <li>
+                    <span>KGS</span>
+                    <span>4.5%</span>
+                </li>
+                <li>
+                    <span>KGS</span>
+                    <span>4.5%</span>
+                </li>
+                <li>
+                    <span>KGS</span>
+                    <span>4.5%</span>
+                </li>
+                <li>
+                    <span>KGS</span>
+                    <span>4.5%</span>
+                </li>
+                <li>
+                    <span>KGS</span>
+                    <span>4.5%</span>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<div class="wrapper">
+    <div class="title">Заявка</div>
+    <form action="">
+        <div class="infoblock">
+            <div class="info">
+                <div class="row"><span class="complete-form-title pt-0">Основная информация</span></div>
+
+                <div class="row"><span class="row-title">Заявитель</span><span id="main-name" class="row-text">-</span></div>
+                <div class="row"><span class="row-title">Супруга</span><span id="main-name2" class="row-text">-</span></div>
+                <div class="row"><span class="row-title">Иждивенцы</span><span id="main-num" class="row-text">-</span></div>
+                <div class="row"><span class="row-title">Дата рождения</span><span id="main-bday" class="row-text">-</span></div>
+                <div class="row"><span class="row-title">Место рождения</span><span id="main-bplace"  class="row-text">-</span></div>
+                <div class="row"><span class="row-title">Паспорт</span><span  id="main-passport"  class="row-text">-</span></div>
+                <div class="row"><span class="row-title">Кем выдан</span><span  id="main-passport2" class="row-text">-</span></div>
+                <div class="row"><span class="row-title">Когда выдан</span><span  id="main-passport3" class="row-text">-</span></div>
+                <div class="row"><span class="row-title">Адрес прописки</span><span id="main-address"  class="row-text">-</span></div>
+                <div class="row"><span class="row-title">Адрес проживания</span><span id="main-address2" class="row-text">-</span></div>
+                <div class="row"><span class="row-title">Район проживания</span><span id="main-address3" class="row-text">-</span></div>
+                <div class="row"><span class="row-title">ИНН</span><span  id="main-passport-num"  class="row-text">-</span></div>
+                <div class="row"><span class="row-title">Контактные телефоны</span><span id="main-phone"  class="row-text">-</span></div>
+                <div class="row"><span class="row-title">Образование</span><span id="main-education"  class="row-text">-</span></div>
+
+                <div class="row"><span class="complete-form-title">Бизнес</span></div>
+
+                <div class="row"><span class="row-title">Вид деятельности</span><span id="business1" class="row-text">-</span></div>
+                <div class="row"><span class="row-title">Опыт работы</span><span id="business2" class="row-text">-</span></div>
+                <div class="row"><span class="row-title">Количество занятых</span><span id="business3" class="row-text">-</span></div>
+                <div class="row"><span class="row-title">Адрес расположения бизнеса</span><span id="business4" class="row-text">-</span></div>
+
+                <div class="row"><span class="complete-form-title">Работа</span></div>
+
+                <div class="row"><span class="row-title">Вид деятельности</span><span id="work1" class="row-text">-</span></div>
+                <div class="row"><span class="row-title">Опыт работы</span><span id="work2" class="row-text">-</span></div>
+                <div class="row"><span class="row-title">Адрес расположения бизнеса</span><span id="work3" class="row-text">-</span></div>
+
+                <div class="row"><span class="complete-form-title">Кредит/Кредитная линия </span></div>
+
+                <div class="row"><span class="row-title">Предлагаемый кредит/кредитная линия</span><span id="credit1" class="row-text">-</span></div>
+                <div class="row"><span class="row-title">Сумма кредита</span><span id="credit2" class="row-text">-</span></div>
+                <div class="row"><span class="row-title">На срок</span><span id="credit3" class="row-text">-</span></div>
+                <div class="row"><span class="row-title">Цель</span><span id="credit4" class="row-text">-</span></div>
+                <div class="row"><span class="row-title">Сумма взноса, которую клиент может выплаичать ежемесячно</span><span id="credit5" class="row-text">-</span></div>
+
+                 <div class="row"><span class="complete-form-title">Залоговое обеспечение </span></div>
+
+                <div class="row"><span class="row-title">Описание</span><span id="collateral1" class="row-text">-</span></div>
+                <div class="row"><span class="row-title">Владелец(кем приходиться Вам)ь</span><span id="collateral2" class="row-text">-</span></div>
+                <div class="row"><span class="row-title">Месторасположение</span><span id="collateral3" class="row-text">-</span></div>
+                <div class="row"><span class="row-title">Рыночная стоимость</span><span id="collateral4" class="row-text">-</span></div>
+
+                <div class="row"><span class="complete-form-title">Поручительство </span></div>
+
+                <div class="row"><span class="row-title">Ф.И.О поручителя</span><span id="surety1" class="row-text">-</span></div>
+                <div class="row"><span class="row-title">Кем приходится заявителю</span><span id="surety2" class="row-text">-</span></div>
+                <div class="row"><span class="row-title">Адрес проживания</span><span id="surety3" class="row-text">-</span></div>
+                <div class="row"><span class="row-title">Вид деятельности и доход (месяц)</span><span id="surety4" class="row-text">-</span></div>
+                <div class="row"><span class="row-title">Рыночная стоимость</span><span id="surety5" class="row-text">-</span></div>
+
+                <div class="row"><span class="complete-form-title">Кредитная история </span></div>
+
+                <div class="row"><span class="row-title">Частное лицо/Банк</span><span id="credit-history1" class="row-text">-</span></div>
+                <div class="row"><span class="row-title">Дата получения</span><span id="credit-history2" class="row-text">-</span></div>
+                <div class="row"><span class="row-title">Дата возврата (договор)</span><span id="credit-history3" class="row-text">-</span></div>
+                <div class="row"><span class="row-title">Дата погашения (фактическая)</span><span id="credit-history4" class="row-text">-</span></div>
+                <div class="row"><span class="row-title">Процентная ставка (% ставка)</span><span id="credit-history5" class="row-text">-</span></div>
+                <div class="row"><span class="row-title">Сумма кредита, валюта</span><span id="credit-history6" class="row-text">-</span></div></div>
+            <div><a href="#">
+                <button class="btn main-btn float-right">Редактировать</button>
+            </a></div>
+        </div>
+    </form>
+
+</div>
+<script src="../libs/jquery/jquery-3.3.1.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.validate.js"></script>
+<script src="../js/jquery.maskedinput.min.js"></script>
+<script src="../js/common.js"></script>
+<script>
+        document.getElementById('main-name').innerText=localStorage.getItem('main-name')
+        document.getElementById('main-name2').innerText=localStorage.getItem('main-name2')
+        document.getElementById('main-num').innerText=localStorage.getItem('main-num')
+        document.getElementById('main-bday').innerText=localStorage.getItem('main-bday')
+        document.getElementById('main-bplace').innerText=localStorage.getItem('main-bplace')
+        document.getElementById('main-passport').innerText=localStorage.getItem('main-passport')
+        document.getElementById('main-passport2').innerText=localStorage.getItem('main-passport2')
+        document.getElementById('main-passport3').innerText=localStorage.getItem('main-passport3')
+        document.getElementById('main-address').innerText=localStorage.getItem('main-address')
+        document.getElementById('main-address2').innerText=localStorage.getItem('main-address2')
+        document.getElementById('main-address3').innerText=localStorage.getItem('main-address3')
+        document.getElementById('main-passport-num').innerText=localStorage.getItem('main-passport-num')
+        document.getElementById('main-phone').innerText=localStorage.getItem('main-phone')
+        document.getElementById('main-education').innerText=localStorage.getItem('main-education')
+
+        document.getElementById('business1').innerText=localStorage.getItem('business1')
+        document.getElementById('business2').innerText=localStorage.getItem('business2')
+        document.getElementById('business3').innerText=localStorage.getItem('business3')
+        document.getElementById('business4').innerText=localStorage.getItem('business4')
+
+        document.getElementById('work1').innerText=localStorage.getItem('work1')
+        document.getElementById('work2').innerText=localStorage.getItem('work2')
+        document.getElementById('work3').innerText=localStorage.getItem('work3')
+
+        document.getElementById('credit1').innerText=localStorage.getItem('credit1')
+        document.getElementById('credit2').innerText=localStorage.getItem('credit2')
+        document.getElementById('credit3').innerText=localStorage.getItem('credit3')
+        document.getElementById('credit4').innerText=localStorage.getItem('credit4')
+        document.getElementById('credit5').innerText=localStorage.getItem('credit5')
+
+        document.getElementById('collateral1').innerText=localStorage.getItem('collateral1')
+        document.getElementById('collateral2').innerText=localStorage.getItem('collateral2')
+        document.getElementById('collateral3').innerText=localStorage.getItem('collateral3')
+        document.getElementById('collateral4').innerText=localStorage.getItem('collateral4')
+
+        document.getElementById('surety1').innerText=localStorage.getItem('surety1')
+        document.getElementById('surety2').innerText=localStorage.getItem('surety2')
+        document.getElementById('surety3').innerText=localStorage.getItem('surety3')
+        document.getElementById('surety4').innerText=localStorage.getItem('surety4')
+        document.getElementById('surety5').innerText=localStorage.getItem('surety5')
+
+        document.getElementById('credit-history1').innerText=localStorage.getItem('credit-history1')
+        document.getElementById('credit-history2').innerText=localStorage.getItem('credit-history2')
+        document.getElementById('credit-history3').innerText=localStorage.getItem('credit-history3')
+        document.getElementById('credit-history4').innerText=localStorage.getItem('credit-history4')
+        document.getElementById('credit-history5').innerText=localStorage.getItem('credit-history5')
+        document.getElementById('credit-history6').innerText=localStorage.getItem('credit-history6')
+</script>
+</body>
+</html>
