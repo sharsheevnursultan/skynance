@@ -7,7 +7,6 @@ body {
     height: 80vh;
     margin: 0;
     border: 0;
-    border-radius: 10px;
 }
 
 .logo {
@@ -15,7 +14,11 @@ body {
     background: #ffffff;
     border-radius: 10px;
     width: 150px;
-    margin: 20px auto;
+    margin: 10px auto;
+}
+
+.custom-container{
+    margin: 0 10px;
 }
 
 #preloader_preload {
