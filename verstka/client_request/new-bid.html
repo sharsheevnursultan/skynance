@@ -384,7 +384,7 @@
                                     class="custom-select input-for-select"
                                     name="select-education"
                                     required>
-                                <option value="0" disabled selected>-- выбрать --</option>
+                                <option value="Не выбрано" disabled selected>-- выбрать --</option>
                                 <option value="высшее">высшее</option>
                                 <option value="среднее">среднее</option>
                                 <option value="средне специальное">средне специальное</option>
@@ -423,7 +423,8 @@
                         </div>
                     </div>
                     <div class="d-flex w-100 justify-content-end">
-                        <input type="submit" id="submit_main" class="btn main-btn nextPage" value="Далее">
+                        <input type="submit" id="submit_main" class="btn save-btn" value="Сохранить">
+                        <input type="submit" class="btn main-btn nextPage" value="Далее">
                     </div>
 
                 </form>
@@ -433,7 +434,7 @@
 
                 <div class="my-row">
                     <label class="cg-checkbox">
-                        <input type="radio" id="checkbox_business" name="workOrBusiness" class="" checked>
+                        <input type="checkbox" id="checkbox_business" name="workOrBusiness" class="" checked>
                         <span class="checkmark"></span>
                         <span class="cg-checkbox-name">Бизнес</span>
                     </label>
@@ -470,7 +471,8 @@
                             </span>
                         </label>
                         <div class="d-flex w-100 justify-content-end">
-                            <input type="submit" id="business-submit" class="btn main-btn nextPage" value="Далее">
+                            <input type="submit" id="business-submit" class="btn save-btn" value="Сохранить">
+                            <input type="submit" class="btn main-btn nextPage" value="Далее">
                         </div>
                     </div>
 
@@ -478,7 +480,7 @@
 
                 <div class="my-row">
                     <label class="cg-checkbox">
-                        <input type="radio" id="checkbox-work" name="workOrBusiness" class="">
+                        <input type="checkbox" id="checkbox-work" name="workOrBusiness" class="">
                         <span class="checkmark"></span>
                         <span class="cg-checkbox-name">Работа</span>
                     </label>
@@ -510,18 +512,20 @@
                         <span class="my-row">
                             <span class="row-title">Справка с места работы</span>
                             <div class="checkbox-work-content__input-file input-span">
+
+                                <label for="work-input-file" type="text" class="mb-0 work-input-file-output"></label>
+                                <label for="work-input-file" class="btn main-btn mb-0">Добавить файл</label>
                                 <input id="work-input-file"
                                        type="file"
                                        name="name4"
                                        class="work-input-file-hidden "
                                        placeholder="Текст"
                                        required>
-                                <label for="work-input-file" type="text" class="mb-0 work-input-file-output"></label>
-                                <label for="work-input-file" class="btn main-btn mb-0">Добавить файл</label>
                             </div>
                         </span>
                         <div class="d-flex w-100 justify-content-end">
-                            <input type="submit" id="work-submit" class="btn main-btn nextPage" value="Далее">
+                            <input type="submit" id="work-submit" class="btn save-btn nextPage" value="Сохранить">
+                            <input type="submit" class="btn main-btn nextPage" value="Далее">
                         </div>
                     </div>
 
@@ -591,7 +595,8 @@
                         </span>
                     </label>
                     <div class="d-flex w-100 justify-content-end">
-                        <input type="submit" id="credit-submit" class="btn main-btn nextPage" value="Далее">
+                        <input type="submit" id="credit-submit" class="btn save-btn nextPage" value="Сохранить">
+                        <input type="submit" class="btn main-btn nextPage" value="Далее">
                     </div>
                 </form>
             </div>
@@ -608,40 +613,45 @@
                         </div>
                         <div class="table-item w-100">
                             <div class=" w23 error-label-parent">
-                                <input id="collateral1" type="text" class="form-control input " placeholder="Текст" required
+                                <input id="collateral1" type="text" class="form-control input " placeholder="Текст"
+                                       required
                                        name="name1"/>
                             </div>
                             <div class=" w23 error-label-parent">
-                                <input id="collateral2" type="text" class="form-control input " placeholder="Текст" required
+                                <input id="collateral2" type="text" class="form-control input " placeholder="Текст"
+                                       required
                                        name="name2"/>
 
                             </div>
                             <div class=" w23 error-label-parent">
-                                <input id="collateral3" type="text" class="form-control input " placeholder="Текст" required
+                                <input id="collateral3" type="text" class="form-control input " placeholder="Текст"
+                                       required
                                        name="name3"/>
 
                             </div>
                             <div class=" w23 error-label-parent">
-                                <input id="collateral4" type="text" class="form-control input " placeholder="Текст" required
+                                <input id="collateral4" type="text" class="form-control input " placeholder="Текст"
+                                       required
                                        name="name4"/>
 
                             </div>
                         </div>
                         <div class="table-item">
-                            <input type="text" class="form-control input w23" placeholder="Текст"/>
-                            <input type="text" class="form-control input w23" placeholder="Текст"/>
-                            <input type="text" class="form-control input w23" placeholder="Текст"/>
-                            <input type="text" class="form-control input w23" placeholder="Текст"/>
+                            <input id="collateral5" type="text" class="form-control input w23" placeholder="Текст"/>
+                            <input id="collateral6" type="text" class="form-control input w23" placeholder="Текст"/>
+                            <input id="collateral7" type="text" class="form-control input w23" placeholder="Текст"/>
+                            <input id="collateral8" type="text" class="form-control input w23" placeholder="Текст"/>
                         </div>
                         <div class="table-item">
-                            <input type="text" class="form-control input w23" placeholder="Текст"/>
-                            <input type="text" class="form-control input w23" placeholder="Текст"/>
-                            <input type="text" class="form-control input w23" placeholder="Текст"/>
-                            <input type="text" class="form-control input w23" placeholder="Текст"/>
+                            <input id="collateral9" type="text" class="form-control input w23" placeholder="Текст"/>
+                            <input id="collateral10" type="text" class="form-control input w23" placeholder="Текст"/>
+                            <input id="collateral11" type="text" class="form-control input w23" placeholder="Текст"/>
+                            <input id="collateral12" type="text" class="form-control input w23" placeholder="Текст"/>
                         </div>
                     </div>
                     <div class="d-flex w-100 justify-content-end">
-                        <input type="submit" id="collateral-submit" class="btn main-btn nextPage" value="Далее">
+                        <input type="submit" id="collateral-submit" class="btn save-btn nextPage" value="Сохранить">
+                        <input type="submit"  class="btn main-btn nextPage" value="Далее">
                     </div>
                 </form>
             </div>
@@ -660,31 +670,32 @@
                         <!-- Добавленны новые классы w12, w10  -->
                         <div class="table-item w-100">
                             <div class="w4 error-label-parent">
-                                <input  id="surety1" name="" disabled type="text" class="input form-control" placeholder="1"/>
+                                <input name="" disabled type="text" class="input form-control"
+                                       placeholder="1"/>
 
                             </div>
                             <div class="w23 error-label-parent">
-                                <input  id="surety2" name="name2" required type="text" class="form-control input"
+                                <input id="surety1" name="name2" required type="text" class="form-control input"
                                        placeholder="Текст"/>
 
                             </div>
                             <div class="w12 error-label-parent">
-                                <input  id="surety3" name="name3" required type="text" class="form-control input"
+                                <input id="surety2" name="name3" required type="text" class="form-control input"
                                        placeholder="Текст"/>
 
                             </div>
                             <div class="w23 error-label-parent">
-                                <input  id="surety4" name="name4" required type="text" class="form-control input"
+                                <input id="surety3" name="name4" required type="text" class="form-control input"
                                        placeholder="Текст"/>
 
                             </div>
                             <div class="w17 error-label-parent">
-                                <input  id="surety5" name="name5" required type="text" class="form-control input"
+                                <input id="surety4" name="name5" required type="text" class="form-control input"
                                        placeholder="Текст"/>
 
                             </div>
                             <div class="w10 error-label-parent">
-                                <input  id="surety6" name="name1" required type="text" class="form-control input"
+                                <input id="surety5" name="name1" required type="text" class="form-control input"
                                        placeholder="Текст"/>
 
                             </div>
@@ -692,24 +703,25 @@
                         <!-- Добавленны новые классы w12, w10  -->
                         <div class="table-item">
                             <input type="text" disabled class="form-control input w4" placeholder="2"/>
-                            <input type="text" class="form-control input w23" placeholder="Текст"/>
-                            <input type="text" class="form-control input w12" placeholder="Текст"/>
-                            <input type="text" class="form-control input w23" placeholder="Текст"/>
-                            <input type="text" class="form-control input w17" placeholder="Текст"/>
-                            <input type="text" class="form-control input w10" placeholder="Текст"/>
+                            <input id="surety6" type="text" class="form-control input w23" placeholder="Текст"/>
+                            <input id="surety7" type="text" class="form-control input w12" placeholder="Текст"/>
+                            <input id="surety8" type="text" class="form-control input w23" placeholder="Текст"/>
+                            <input id="surety9" type="text" class="form-control input w17" placeholder="Текст"/>
+                            <input id="surety10" type="text" class="form-control input w10" placeholder="Текст"/>
                         </div>
                         <!-- Добавленны новые классы w12, w10  -->
                         <div class="table-item">
                             <input type="text" disabled class="form-control input w4" placeholder="3"/>
-                            <input type="text" class="form-control input w23" placeholder="Текст"/>
-                            <input type="text" class="form-control input w12" placeholder="Текст"/>
-                            <input type="text" class="form-control input w23" placeholder="Текст"/>
-                            <input type="text" class="form-control input w17" placeholder="Текст"/>
-                            <input type="text" class="form-control input w10" placeholder="Текст"/>
+                            <input id="surety11" type="text" class="form-control input w23" placeholder="Текст"/>
+                            <input id="surety12" type="text" class="form-control input w12" placeholder="Текст"/>
+                            <input id="surety13" type="text" class="form-control input w23" placeholder="Текст"/>
+                            <input id="surety14" type="text" class="form-control input w17" placeholder="Текст"/>
+                            <input id="surety15" type="text" class="form-control input w10" placeholder="Текст"/>
                         </div>
                     </div>
                     <div class="d-flex w-100 justify-content-end">
-                        <input id="surety-submit" type="submit" class="btn main-btn nextPage" value="Далее">
+                        <input type="submit" id="surety-submit" class="btn save-btn nextPage" value="Сохранить">
+                        <input type="submit" class="btn main-btn nextPage" value="Далее">
                     </div>
                 </form>
             </div>
@@ -797,7 +809,9 @@
                         </div>
                     </div>
                     <div class="d-flex w-100 justify-content-end">
-                        <input id="credit-history-submit" type="submit" class="btn main-btn" value="Отправить">
+                        <input type="submit" id="credit-history-submit" class="btn save-btn nextPage" value="Сохранить">
+                        <a href="completed-bid.html" class="btn main-btn"><span>Посмотреть и отправить</span></a>
+<!--                        <input type="submit" class="btn main-btn" value="Посмотреть и отправить">-->
                     </div>
                 </form>
             </div>
@@ -855,6 +869,14 @@
         localStorage.setItem('collateral2', document.getElementById('collateral2').value)
         localStorage.setItem('collateral3', document.getElementById('collateral3').value)
         localStorage.setItem('collateral4', document.getElementById('collateral4').value)
+        localStorage.setItem('collateral5', document.getElementById('collateral5').value)
+        localStorage.setItem('collateral6', document.getElementById('collateral6').value)
+        localStorage.setItem('collateral7', document.getElementById('collateral7').value)
+        localStorage.setItem('collateral8', document.getElementById('collateral8').value)
+        localStorage.setItem('collateral9', document.getElementById('collateral9').value)
+        localStorage.setItem('collateral10', document.getElementById('collateral10').value)
+        localStorage.setItem('collateral11', document.getElementById('collateral11').value)
+        localStorage.setItem('collateral12', document.getElementById('collateral12').value)
     }
     document.getElementById('surety-submit').onclick = () => {
         localStorage.setItem('surety1', document.getElementById('surety1').value)
@@ -862,6 +884,17 @@
         localStorage.setItem('surety3', document.getElementById('surety3').value)
         localStorage.setItem('surety4', document.getElementById('surety4').value)
         localStorage.setItem('surety5', document.getElementById('surety5').value)
+        localStorage.setItem('surety6', document.getElementById('surety6').value)
+        localStorage.setItem('surety7', document.getElementById('surety7').value)
+        localStorage.setItem('surety8', document.getElementById('surety8').value)
+        localStorage.setItem('surety9', document.getElementById('surety9').value)
+        localStorage.setItem('surety10', document.getElementById('surety10').value)
+        localStorage.setItem('surety11', document.getElementById('surety11').value)
+        localStorage.setItem('surety12', document.getElementById('surety12').value)
+        localStorage.setItem('surety13', document.getElementById('surety13').value)
+        localStorage.setItem('surety14', document.getElementById('surety14').value)
+        localStorage.setItem('surety15', document.getElementById('surety15').value)
+
     }
     document.getElementById('credit-history-submit').onclick = () => {
         localStorage.setItem('credit-history1', document.getElementById('credit-history1').value)
@@ -870,7 +903,18 @@
         localStorage.setItem('credit-history4', document.getElementById('credit-history4').value)
         localStorage.setItem('credit-history5', document.getElementById('credit-history5').value)
         localStorage.setItem('credit-history6', document.getElementById('credit-history6').value)
-    }
+        localStorage.setItem('credit-history7', document.getElementById('credit-history7').value)
+        localStorage.setItem('credit-history8', document.getElementById('credit-history8').value)
+        localStorage.setItem('credit-history9', document.getElementById('credit-history9').value)
+        localStorage.setItem('credit-history10', document.getElementById('credit-history10').value)
+        localStorage.setItem('credit-history11', document.getElementById('credit-history11').value)
+        localStorage.setItem('credit-history12', document.getElementById('credit-history12').value)
+        localStorage.setItem('credit-history13', document.getElementById('credit-history13').value)
+        localStorage.setItem('credit-history14', document.getElementById('credit-history14').value)
+        localStorage.setItem('credit-history15', document.getElementById('credit-history15').value)
+        localStorage.setItem('credit-history16', document.getElementById('credit-history16').value)
+        localStorage.setItem('credit-history17', document.getElementById('credit-history17').value)
+        localStorage.setItem('credit-history18', document.getElementById('credit-history18').value)}
 
 </script>
 </body>

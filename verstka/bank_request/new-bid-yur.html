@@ -230,12 +230,11 @@
                     <div class="my-row">
                         <span class="form-title">Основная информация</span>
                     </div>
-                    <!-- Изменен placeholder на
-                    Название компании -->
                     <label class="my-row">
                         <span class="row-title">Предприятие</span>
                         <span class="input-span ">
                             <input type="text"
+                                   id="yur-main1"
                                    name="name1"
                                    class="form-control input"
                                    placeholder="Название компании"
@@ -247,6 +246,8 @@
                         <span class="input-span d-flex">
                             <span class="input-span ">
                             <input type="text"
+                                   id="yur-main2"
+
                                    name="name2"
                                    class="form-control input  "
                                    placeholder="Номер"
@@ -256,6 +257,7 @@
                         <span class="input-span pl-2">
                              <input type="text"
                                     name="name3"
+                                    id="yur-main3"
                                     class="form-control input  "
                                     placeholder="Серия"
                                     required>
@@ -268,6 +270,7 @@
                             <span class="input-span">
                                 <input type="text"
                                        name="name4"
+                                       id="yur-main4"
                                        class="form-control input  "
                                        placeholder="Дата регистрации"
                                        required>
@@ -275,6 +278,7 @@
                             <span class="input-span pl-2">
                                 <input type="text"
                                        name="name12"
+                                       id="yur-main5"
                                        class="form-control input  "
                                        placeholder="ИНН"
                                        required>
@@ -288,6 +292,8 @@
                         <span class="input-span">
                             <input type="text"
                                    name="name5"
+                                   id="yur-main6"
+
                                    class="form-control input"
                                    placeholder="Текст"
                                    required>
@@ -298,6 +304,8 @@
                         <span class="row-title">Фактический адрес</span>
                         <span class="input-span">
                              <input type="text"
+                                    id="yur-main7"
+
                                     name="name6"
                                     class="form-control input"
                                     placeholder="Текст"
@@ -305,14 +313,14 @@
                         </span>
 
                     </label>
-                    <!-- Изменен текст на Контактные телефоны  изменен placeholder
-                    на Текст -->
                     <label class="my-row">
                         <span class="row-title">Контактные телефоны</span>
                         <span class="input-span d-flex">
                             <span class="input-span">
                                 <input type="text"
                                        name="name7"
+                                       id="yur-main8"
+
                                        class="form-control input"
                                        placeholder="Текст"
                                        required>
@@ -320,6 +328,8 @@
                             <span class="input-span pl-2">
                                 <input type="text"
                                        name="name8"
+                                       id="yur-main9"
+
                                        class="form-control input  "
                                        placeholder="Текст"
                                        required>
@@ -334,6 +344,8 @@
                             <span class="input-span">
                                 <input type="text"
                                        name="name9"
+                                       id="yur-main10"
+
                                        class="form-control input  "
                                        placeholder="Текст"
                                        required>
@@ -341,38 +353,38 @@
                             <span class="input-span pl-2">
                                  <input type="text"
                                         name="name13"
+                                        id="yur-main11"
+
                                         class="form-control input  "
                                         placeholder="Банк"
                                         required>
                             </span>
                         </span>
-
-
                     </label>
                     <label class="my-row">
                         <span class="row-title">Валютный счет</span>
                         <span class="input-span d-flex">
                             <span class="input-span">
-
                                  <input type="text"
+                                        id="yur-main12"
+
                                         name="name10"
                                         class="form-control input  "
                                         placeholder="Текст"
                                         required>
                             </span>
                             <span class="input-span pl-2">
-
                                 <input type="text"
+                                       id="yur-main13"
                                        name="name11"
                                        class="form-control input  "
                                        placeholder="Банк"
                                        required>
                             </span>
                         </span>
-
-
                     </label>
                     <div class="d-flex w-100 justify-content-end">
+                        <input type="submit" id="submit_main" class="btn save-btn nextPage" value="Сохранить">
                         <input type="submit" class="btn main-btn nextPage" value="Далее">
                     </div>
                 </form>
@@ -386,10 +398,10 @@
                     <span class="my-row">
                         <span class="row-title">Предполагаемый кредит /<br> кредитная линия</span>
                         <span class="input-span">
-                            <select class="custom-select input-for-select " name="selector" required>
-                                <option value="1" selected disabled>--выбрать--</option>
-                                <option value="2">Возобновляемый</option>
-                                <option value="3">Невозобновляемый</option>
+                            <select class="custom-select input-for-select " id="yur-credit1" name="selector" required>
+                                <option value="не выбрано" selected disabled>--выбрать--</option>
+                                <option value="Возобновляемый">Возобновляемый</option>
+                                <option value="Невозобновляемый">Невозобновляемый</option>
                             </select>
                         </span>
                     </span>
@@ -398,14 +410,14 @@
                         <span class="row-title">Сумма кредита</span>
                         <span class="input-span d-flex">
                             <span class="input-span">
-                                <input type="text"
+                                <input type="text" id="yur-credit2"
                                        name="name1"
                                        class="form-control input  "
                                        placeholder="Текст"
                                        required>
                             </span>
                             <span class="input-span pl-2">
-                                 <input type="text"
+                                 <input type="text" id="yur-credit3"
                                         name="name2"
                                         class="form-control input  "
                                         placeholder="Валюта"
@@ -418,7 +430,7 @@
                     <label class="my-row">
                         <span class="row-title">На срок</span>
                         <span class="input-span">
-                            <input type="text"
+                            <input type="text" id="yur-credit4"
                                    name="name3"
                                    class="form-control input"
                                    placeholder="Текст"
@@ -428,7 +440,7 @@
                     <label class="my-row">
                         <span class="row-title">Цель</span>
                         <span class="input-span">
-                             <input type="text"
+                             <input type="text" id="yur-credit5"
                                     name="name4"
                                     class="form-control input"
                                     placeholder="Текст"
@@ -439,7 +451,7 @@
                     <label class="my-row">
                         <span class="row-title">Количество учредителей</span>
                         <span class="input-span">
-                             <input type="text"
+                             <input type="text" id="yur-credit6"
                                     name="name5"
                                     class="form-control input"
                                     placeholder="Текст"
@@ -450,7 +462,7 @@
                     <label class="my-row">
                         <span class="row-title">Количество работников</span>
                         <span class="input-span">
-                            <input type="text"
+                            <input type="text" id="yur-credit7"
                                    name="name6"
                                    class="form-control input"
                                    placeholder="Текст"
@@ -461,7 +473,7 @@
                     <label class="my-row">
                         <span class="row-title">Вид деятельности</span>
                         <span class="input-span">
-                             <input type="text"
+                             <input type="text" id="yur-credit8"
                                     name="name7"
                                     class="form-control input"
                                     placeholder="Текст"
@@ -472,7 +484,7 @@
                     <label class="my-row">
                         <span class="row-title">Опыт работы (лет)</span>
                         <span class="input-span">
-                             <input type="text"
+                             <input type="text" id="yur-credit9"
                                     name="name8"
                                     class="form-control input"
                                     placeholder="Текст"
@@ -481,9 +493,8 @@
 
                     </label>
                     <div class="d-flex w-100 justify-content-end">
-                        <input type="submit"
-                               class="btn main-btn nextPage"
-                               value="Далее">
+                        <input type="submit" id="credit-submit" class="btn save-btn nextPage" value="Сохранить">
+                        <input type="submit" class="btn main-btn nextPage" value="Далее">
                     </div>
                 </form>
             </div>
@@ -496,6 +507,7 @@
                         <span class="row-title">ФИО руководителя</span>
                         <span class="input-span">
                               <input type="text"
+                                     id="yur-chiefs1"
                                      class="form-control input"
                                      name="name1"
                                      placeholder="Фамилия Имя Отчество"
@@ -507,6 +519,8 @@
                         <span class="row-title">ФИО супруги/супруга</span>
                         <span class="input-span">
                                <input type="text"
+                            id="yur-chiefs2"
+
                                       class="form-control input"
                                       name="name2"
                                       placeholder="Фамилия Имя Отчество"
@@ -518,6 +532,8 @@
                         <span class="row-title">Иждивенцы</span>
                         <span class="input-span">
                               <input type="text"
+                                     id="yur-chiefs3"
+
                                      class="form-control input"
                                      name="name3"
                                      required
@@ -531,6 +547,8 @@
                         <span class="input-span">
 
                             <input type="text"
+                                   id="yur-chiefs4"
+
                                    class="form-control input"
                                    required
                                    name="name4"
@@ -543,6 +561,8 @@
                         <span class="input-span">
 
                              <input type="text"
+                                    id="yur-chiefs5"
+
                                     class="form-control input"
                                     required
                                     name="name5"
@@ -554,6 +574,8 @@
                         <span class="row-title">Место рождения</span>
                         <span class="input-span">
                              <input type="text"
+                                    id="yur-chiefs6"
+
                                     class="form-control input"
                                     required
                                     name="name6"
@@ -568,6 +590,7 @@
 
                              <input type="text" class="form-control input"
                                     required
+                                    id="yur-chiefs7"
                                     name="name7"
                                     placeholder="Текст">
                         </span>
@@ -578,6 +601,8 @@
                         <span class="input-span">
 
                              <input type="text"
+                                    id="yur-chiefs8"
+
                                     class="form-control input"
                                     required
                                     name="name8"
@@ -589,6 +614,8 @@
                         <span class="row-title">Когда</span>
                         <span class="input-span">
                              <input type="text"
+                                    id="yur-chiefs9"
+
                                     class="form-control input"
                                     required
                                     name="name9"
@@ -602,6 +629,8 @@
                         <span class="input-span">
 
                               <input type="text"
+                                     id="yur-chiefs10"
+
                                      class="form-control input"
                                      required
                                      name="name10"
@@ -614,6 +643,8 @@
                         <span class="input-span">
 
                              <input type="text"
+                                    id="yur-chiefs11"
+
                                     class="form-control input"
                                     required
                                     name="name11"
@@ -626,6 +657,8 @@
                         <span class="input-span d-flex">
                             <span class="input-span">
                                 <input type="text"
+                                       id="yur-chiefs12"
+
                                        class="  form-control input"
                                        required
                                        name="name12"
@@ -634,6 +667,8 @@
                             <span class="input-span pl-2">
                                  <input type="text" class="  form-control input"
                                         required
+                                        id="yur-chiefs13"
+
                                         name="name13"
                                         placeholder="Текст">
                             </span>
@@ -646,6 +681,8 @@
                              <input type="text"
                                     class="form-control input"
                                     required
+                                    id="yur-chiefs14"
+
                                     name="name14"
                                     placeholder="Текст">
                         </span>
@@ -657,6 +694,8 @@
                                  <input type="text"
                                         class="form-control input"
                                         required
+                                        id="yur-chiefs15"
+
                                         name="name15"
                                         placeholder="Текст">
                         </span>
@@ -670,6 +709,8 @@
                               <input type="text"
                                      class="form-control input"
                                      required
+                                     id="yur-chiefs16"
+
                                      name="name16"
                                      placeholder="Фамилия Имя Отчество">
                         </span>
@@ -682,6 +723,8 @@
                              <input type="text"
                                     class="form-control input"
                                     required
+                                    id="yur-chiefs17"
+
                                     name="name17"
                                     placeholder="Фамилия Имя Отчество">
                         </span>
@@ -693,6 +736,8 @@
 
                              <input type="text" class="form-control input"
                                     required
+                                    id="yur-chiefs18"
+
                                     name="name18"
                                     placeholder="Фамилия Имя Отчество">
                         </span>
@@ -704,6 +749,8 @@
 
                             <input
                                     type="text"
+                                    id="yur-chiefs19"
+
                                     class="form-control input"
                                     required
                                     name="name19"
@@ -716,6 +763,8 @@
                         <span class="input-span">
 
                              <input type="text"
+                                    id="yur-chiefs20"
+
                                     class="form-control input"
                                     required
                                     name="name20"
@@ -728,6 +777,8 @@
                         <span class="input-span">
 
                              <input type="text"
+                                    id="yur-chiefs21"
+
                                     class="form-control input"
                                     required
                                     name="name21"
@@ -740,6 +791,8 @@
                         <span class="input-span">
 
                             <input type="text"
+                                   id="yur-chiefs22"
+
                                    class="form-control input"
                                    required
                                    name="name22"
@@ -752,6 +805,8 @@
                         <span class="input-span">
 
                              <input type="text"
+                                    id="yur-chiefs23"
+
                                     class="form-control input"
                                     required
                                     name="name23"
@@ -764,6 +819,8 @@
                         <span class="input-span">
 
                             <input type="text"
+                                   id="yur-chiefs24"
+
                                    class="form-control input"
                                    required
                                    name="name24"
@@ -776,6 +833,8 @@
                         <span class="input-span">
 
                             <input type="text"
+                                   id="yur-chiefs25"
+
                                    class="form-control input"
                                    required
                                    name="name25"
@@ -787,6 +846,8 @@
                         <span class="row-title">Адрес проживания</span>
                         <span class="input-span">
                              <input type="text"
+                                    id="yur-chiefs26"
+
                                     class="form-control input"
                                     required
                                     name="name26"
@@ -800,6 +861,8 @@
                         <span class="input-span">
 
                             <input type="text"
+                                   id="yur-chiefs27"
+
                                    class="form-control input"
                                    required
                                    name="name27"
@@ -812,6 +875,8 @@
                         <span class="input-span d-flex">
                             <span class="input-span">
                                 <input type="text"
+                                       id="yur-chiefs28"
+
                                        class="  form-control input"
                                        required
                                        name="name28"
@@ -820,6 +885,8 @@
                             <span class="input-span pl-2">
                                  <input type="text" class="  form-control input"
                                         required
+                                        id="yur-chiefs29"
+
                                         name="name29"
                                         placeholder="Текст">
                             </span>
@@ -833,6 +900,8 @@
                             <input type="text"
                                    class="form-control input"
                                    required
+                                   id="yur-chiefs30"
+
                                    name="name30"
                                    placeholder="Текст">
 
@@ -840,6 +909,7 @@
 
                     </label>
                     <div class="d-flex w-100 justify-content-end">
+                        <input type="submit" id="chiefs-submit" class="btn save-btn nextPage" value="Сохранить">
                         <input type="submit" class="btn main-btn nextPage" value="Далее">
                     </div>
                 </form>
@@ -853,6 +923,7 @@
                         <span class="row-title">ФИО Бухгалтера</span>
                         <span class="input-span">
                              <input type="text"
+                                    id="yur-booker1"
                                     name="name1"
                                     required
                                     class="form-control input"
@@ -865,6 +936,8 @@
                         <span class="input-span">
                              <input type="text"
                                     name="name2"
+                                    id="yur-booker2"
+
                                     required
                                     class="form-control input"
                                     placeholder="Фамилия Имя Отчество">
@@ -876,6 +949,8 @@
                         <span class="input-span">
                              <input type="text"
                                     name="name3"
+                                    id="yur-booker3"
+
                                     required
                                     class="form-control input"
                                     placeholder="Фамилия Имя Отчество">
@@ -886,6 +961,8 @@
                         <span class="row-title">% собственности в предприятии <br>(если есть)</span>
                         <span class="input-span">
                              <input type="text"
+                                    id="yur-booker4"
+
                                     name="name4"
                                     required
                                     class="form-control input"
@@ -899,6 +976,8 @@
                              <input type="text"
                                     name="name5"
                                     required
+                                    id="yur-booker5"
+
                                     class="form-control input"
                                     placeholder="Текст">
                         </span>
@@ -910,6 +989,8 @@
                              <input type="text"
                                     name="name6"
                                     required
+                                    id="yur-booker6"
+
                                     class="form-control input"
                                     placeholder="Текст">
                         </span>
@@ -921,6 +1002,8 @@
                              <input type="text"
                                     name="name7"
                                     required
+                                    id="yur-booker7"
+
                                     class="form-control input"
                                     placeholder="Текст">
                         </span>
@@ -932,6 +1015,8 @@
                              <input type="text"
                                     name="name8"
                                     required
+                                    id="yur-booker8"
+
                                     class="form-control input"
                                     placeholder="Текст">
                         </span>
@@ -943,6 +1028,8 @@
                              <input type="text"
                                     name="name9"
                                     required
+                                    id="yur-booker9"
+
                                     class="form-control input"
                                     placeholder="Текст">
                         </span>
@@ -954,6 +1041,8 @@
                              <input type="text"
                                     name="name10"
                                     required
+                                    id="yur-booker10"
+
                                     class="form-control input"
                                     placeholder="Текст">
                         </span>
@@ -964,6 +1053,8 @@
                         <span class="input-span">
                             <input type="text"
                                    name="name11"
+                                   id="yur-booker11"
+
                                    required
                                    class="form-control input"
                                    placeholder="Текст">
@@ -977,11 +1068,15 @@
                                 <input type="text"
                                        class="  form-control input"
                                        required
+                                       id="yur-booker12"
+
                                        name="name12"
                                        placeholder="Текст">
                             </span>
                             <span class="input-span pl-2">
                                  <input type="text"
+                                        id="yur-booker13"
+
                                         class="  form-control input"
                                         required
                                         name="name13"
@@ -994,6 +1089,8 @@
                         <span class="input-span">
                              <input type="text"
                                     name="name14"
+                                    id="yur-booker14"
+
                                     required
                                     class="form-control input"
                                     placeholder="Текст">
@@ -1004,6 +1101,8 @@
                         <span class="row-title">Образование</span>
                         <span class="input-span">
                             <input type="text"
+                                   id="yur-booker15"
+
                                    name="name15"
                                    required
                                    class="form-control input"
@@ -1012,6 +1111,7 @@
 
                     </label>
                     <div class="d-flex w-100 justify-content-end">
+                        <input type="submit" id="submit-booker" class="btn save-btn nextPage" value="Сохранить">
                         <input type="submit" class="btn main-btn nextPage" value="Далее">
                     </div>
                 </form>
@@ -1028,39 +1128,40 @@
                         </div>
                         <div class="table-item w-100">
                             <div class=" w23 error-label-parent">
-                                <input type="text" class="form-control input " placeholder="Текст" required
+                                <input id="yur-collateral1" type="text" class="form-control input " placeholder="Текст" required
                                        name="name1"/>
                             </div>
                             <div class=" w23 error-label-parent">
-                                <input type="text" class="form-control input " placeholder="Текст" required
+                                <input id="yur-collateral2"  type="text" class="form-control input " placeholder="Текст" required
                                        name="name2"/>
 
                             </div>
                             <div class=" w23 error-label-parent">
-                                <input type="text" class="form-control input " placeholder="Текст" required
+                                <input id="yur-collateral3"  type="text" class="form-control input " placeholder="Текст" required
                                        name="name3"/>
 
                             </div>
                             <div class=" w23 error-label-parent">
-                                <input type="text" class="form-control input " placeholder="Текст" required
+                                <input id="yur-collateral4"  type="text" class="form-control input " placeholder="Текст" required
                                        name="name4"/>
 
                             </div>
                         </div>
                         <div class="table-item">
-                            <input type="text" class="form-control input w23" placeholder="Текст"/>
-                            <input type="text" class="form-control input w23" placeholder="Текст"/>
-                            <input type="text" class="form-control input w23" placeholder="Текст"/>
-                            <input type="text" class="form-control input w23" placeholder="Текст"/>
+                            <input  id="yur-collateral5"  type="text" class="form-control input w23" placeholder="Текст"/>
+                            <input  id="yur-collateral6"  type="text" class="form-control input w23" placeholder="Текст"/>
+                            <input  id="yur-collateral7"  type="text" class="form-control input w23" placeholder="Текст"/>
+                            <input  id="yur-collateral8"  type="text" class="form-control input w23" placeholder="Текст"/>
                         </div>
                         <div class="table-item">
-                            <input type="text" class="form-control input w23" placeholder="Текст"/>
-                            <input type="text" class="form-control input w23" placeholder="Текст"/>
-                            <input type="text" class="form-control input w23" placeholder="Текст"/>
-                            <input type="text" class="form-control input w23" placeholder="Текст"/>
+                            <input  id="yur-collateral9"  type="text" class="form-control input w23" placeholder="Текст"/>
+                            <input  id="yur-collateral10"  type="text" class="form-control input w23" placeholder="Текст"/>
+                            <input  id="yur-collateral11"  type="text" class="form-control input w23" placeholder="Текст"/>
+                            <input  id="yur-collateral12"  type="text" class="form-control input w23" placeholder="Текст"/>
                         </div>
                     </div>
                     <div class="d-flex w-100 justify-content-end">
+                        <input type="submit" id="collateral-submit" class="btn save-btn nextPage" value="Сохранить">
                         <input type="submit" class="btn main-btn nextPage" value="Далее">
                     </div>
                 </form>
@@ -1085,51 +1186,52 @@
 
                             </div>
                             <div class="w23 error-label-parent">
-                                <input name="name2" required type="text" class="form-control input"
+                                <input id="yur-surety1" name="name2" required type="text" class="form-control input"
                                        placeholder="Текст"/>
 
                             </div>
                             <div class="w12 error-label-parent">
-                                <input name="name3" required type="text" class="form-control input"
+                                <input id="yur-surety2" name="name3" required type="text" class="form-control input"
                                        placeholder="Текст"/>
 
                             </div>
                             <div class="w23 error-label-parent">
-                                <input name="name4" required type="text" class="form-control input"
+                                <input id="yur-surety3" name="name4" required type="text" class="form-control input"
                                        placeholder="Текст"/>
 
                             </div>
                             <div class="w17 error-label-parent">
-                                <input name="name5" required type="text" class="form-control input"
+                                <input id="yur-surety4" name="name5" required type="text" class="form-control input"
                                        placeholder="Текст"/>
 
                             </div>
                             <div class="w10 error-label-parent">
-                                <input name="name1" required type="text" class="form-control input"
+                                <input id="yur-surety5" name="name1" required type="text" class="form-control input"
                                        placeholder="Текст"/>
 
                             </div>
                         </div>
                         <!-- Добавленны новые классы w12, w10  -->
                         <div class="table-item">
-                            <input type="text" disabled class="form-control input w4" placeholder="2"/>
-                            <input type="text" class="form-control input w23" placeholder="Текст"/>
-                            <input type="text" class="form-control input w12" placeholder="Текст"/>
-                            <input type="text" class="form-control input w23" placeholder="Текст"/>
-                            <input type="text" class="form-control input w17" placeholder="Текст"/>
-                            <input type="text" class="form-control input w10" placeholder="Текст"/>
+                            <input  type="text" disabled class="form-control input w4" placeholder="2"/>
+                            <input id="yur-surety6" type="text" class="form-control input w23" placeholder="Текст"/>
+                            <input id="yur-surety7" type="text" class="form-control input w12" placeholder="Текст"/>
+                            <input id="yur-surety8" type="text" class="form-control input w23" placeholder="Текст"/>
+                            <input id="yur-surety9" type="text" class="form-control input w17" placeholder="Текст"/>
+                            <input id="yur-surety10" type="text" class="form-control input w10" placeholder="Текст"/>
                         </div>
                         <!-- Добавленны новые классы w12, w10  -->
                         <div class="table-item">
                             <input type="text" disabled class="form-control input w4" placeholder="3"/>
-                            <input type="text" class="form-control input w23" placeholder="Текст"/>
-                            <input type="text" class="form-control input w12" placeholder="Текст"/>
-                            <input type="text" class="form-control input w23" placeholder="Текст"/>
-                            <input type="text" class="form-control input w17" placeholder="Текст"/>
-                            <input type="text" class="form-control input w10" placeholder="Текст"/>
+                            <input id="yur-surety11" type="text" class="form-control input w23" placeholder="Текст"/>
+                            <input id="yur-surety12" type="text" class="form-control input w12" placeholder="Текст"/>
+                            <input id="yur-surety13" type="text" class="form-control input w23" placeholder="Текст"/>
+                            <input id="yur-surety14" type="text" class="form-control input w17" placeholder="Текст"/>
+                            <input id="yur-surety15" type="text" class="form-control input w10" placeholder="Текст"/>
                         </div>
                     </div>
                     <div class="d-flex w-100 justify-content-end">
+                        <input type="submit" id="surety-submit" class="btn save-btn nextPage" value="Сохранить">
                         <input type="submit" class="btn main-btn nextPage" value="Далее">
                     </div>
                 </form>
@@ -1148,82 +1250,75 @@
                         </div>
                         <div class="table-item w-100">
                             <div class=" w17 error-label-parent">
-                                <input type="text"
+                                <input id="yur-credit-history1" type="text"
                                        class="form-control input "
                                        name="name1"
                                        required
                                        placeholder="Текст"/>
                             </div>
                             <div class=" w14 error-label-parent">
-                                <input type="text"
+                                <input id="yur-credit-history2" type="text"
                                        class="form-control input "
                                        name="name2"
                                        required
                                        placeholder="Текст"/>
-
                             </div>
                             <div class=" w14 error-label-parent">
-                                <input type="text"
+                                <input id="yur-credit-history3" type="text"
                                        class="form-control input "
                                        name="name3"
                                        required
                                        placeholder="Текст"/>
-
                             </div>
                             <div class=" w14 error-label-parent">
-                                <input type="text"
+                                <input id="yur-credit-history4" type="text"
                                        class="form-control input "
                                        name="name4"
                                        required
                                        placeholder="Текст"/>
-
                             </div>
                             <div class=" w14 error-label-parent">
-                                <input type="text"
+                                <input id="yur-credit-history5" type="text"
                                        class="form-control input "
                                        name="name5"
                                        required
                                        placeholder="Текст"/>
-
                             </div>
                             <div class=" w17 error-label-parent">
-                                <input type="text"
+                                <input id="yur-credit-history6" type="text"
                                        class="form-control input "
                                        name="name6"
                                        required
                                        placeholder="Текст"/>
-
                             </div>
                         </div>
                         <div class="table-item">
-                            <input type="text" class="form-control input w17" name="name7" placeholder="Текст"/>
-                            <input type="text" class="form-control input w14" name="name8" placeholder="Текст"/>
-                            <input type="text" class="form-control input w14" name="name9" placeholder="Текст"/>
-                            <input type="text" class="form-control input w14" name="name10" placeholder="Текст"/>
-                            <input type="text" class="form-control input w14" name="name11" placeholder="Текст"/>
-                            <input type="text" class="form-control input w17" name="name12" placeholder="Текст"/>
+                            <input id="yur-credit-history7" type="text" class="form-control input w17" name="name7" placeholder="Текст"/>
+                            <input id="yur-credit-history8" type="text" class="form-control input w14" name="name8" placeholder="Текст"/>
+                            <input id="yur-credit-history9" type="text" class="form-control input w14" name="name9" placeholder="Текст"/>
+                            <input id="yur-credit-history10" type="text" class="form-control input w14" name="name10" placeholder="Текст"/>
+                            <input id="yur-credit-history11" type="text" class="form-control input w14" name="name11" placeholder="Текст"/>
+                            <input id="yur-credit-history12" type="text" class="form-control input w17" name="name12" placeholder="Текст"/>
                         </div>
                         <div class="table-item">
-                            <input type="text" class="form-control input w17" name="name13" placeholder="Текст"/>
-                            <input type="text" class="form-control input w14" name="name14" placeholder="Текст"/>
-                            <input type="text" class="form-control input w14" name="name15" placeholder="Текст"/>
-                            <input type="text" class="form-control input w14" name="name16" placeholder="Текст"/>
-                            <input type="text" class="form-control input w14" name="name17" placeholder="Текст"/>
-                            <input type="text" class="form-control input w17" name="name18" placeholder="Текст"/>
+                            <input id="yur-credit-history13" type="text" class="form-control input w17" name="name13" placeholder="Текст"/>
+                            <input id="yur-credit-history14" type="text" class="form-control input w14" name="name14" placeholder="Текст"/>
+                            <input id="yur-credit-history15" type="text" class="form-control input w14" name="name15" placeholder="Текст"/>
+                            <input id="yur-credit-history16" type="text" class="form-control input w14" name="name16" placeholder="Текст"/>
+                            <input id="yur-credit-history17" type="text" class="form-control input w14" name="name17" placeholder="Текст"/>
+                            <input id="yur-credit-history18" type="text" class="form-control input w17" name="name18" placeholder="Текст"/>
                         </div>
                     </div>
 
                     <div class="d-flex w-100 justify-content-end">
-                        <input type="submit" class="btn main-btn" value="Отправить">
+                        <input type="submit" id="credit-history-submit" class="btn save-btn " value="Сохранить">
+                        <!--                        <a href="completed-bid-yur.html">-->
+                        <!--                            <input type="submit" class="btn main-btn" value="Посмотреть и отправить">-->
+                        <!--                        </a>-->
+                        <a href="completed-bid-yur.html" class="btn main-btn"><span>Посмотреть и отправить</span></a>
                     </div>
-                    <!--                    <button class="btn right main-btn">Далее</button>-->
-                    <!--                    &lt;!&ndash; Добавленна новая кнопка  Отправить &ndash;&gt;-->
-                    <!--                    &lt;!&ndash; Добавленна новая кнопка  Просмотр &ndash;&gt;-->
-                    <!--                    <button class="btn main-btn">Просмотр</button>-->
-                    <!--                    <button class="btn main-btn">Отправить</button>-->
                 </form>
             </div>
-
         </div>
     </div>
 
@@ -1489,6 +1584,137 @@
 
     });
     $("input[type=tel]").mask("0(999) 999-999");
+</script>
+<script>
+    document.getElementById('submit_main').onclick = () => {
+        localStorage.setItem('yur-main1', document.getElementById('yur-main1').value)
+        localStorage.setItem('yur-main2', document.getElementById('yur-main2').value)
+        localStorage.setItem('yur-main3', document.getElementById('yur-main3').value)
+        localStorage.setItem('yur-main4', document.getElementById('yur-main4').value)
+        localStorage.setItem('yur-main5', document.getElementById('yur-main5').value)
+        localStorage.setItem('yur-main6', document.getElementById('yur-main6').value)
+        localStorage.setItem('yur-main7', document.getElementById('yur-main7').value)
+        localStorage.setItem('yur-main8', document.getElementById('yur-main8').value)
+        localStorage.setItem('yur-main9', document.getElementById('yur-main9').value)
+        localStorage.setItem('yur-main10', document.getElementById('yur-main10').value)
+        localStorage.setItem('yur-main11', document.getElementById('yur-main11').value)
+        localStorage.setItem('yur-main12', document.getElementById('yur-main12').value)
+        localStorage.setItem('yur-main13', document.getElementById('yur-main13').value)
+
+    };
+
+    document.getElementById('credit-submit').onclick = () => {
+        localStorage.setItem('yur-credit1', document.getElementById('yur-credit1').value)
+        localStorage.setItem('yur-credit2', document.getElementById('yur-credit2').value)
+        localStorage.setItem('yur-credit3', document.getElementById('yur-credit3').value)
+        localStorage.setItem('yur-credit4', document.getElementById('yur-credit4').value)
+        localStorage.setItem('yur-credit5', document.getElementById('yur-credit5').value)
+        localStorage.setItem('yur-credit6', document.getElementById('yur-credit6').value)
+        localStorage.setItem('yur-credit7', document.getElementById('yur-credit7').value)
+        localStorage.setItem('yur-credit8', document.getElementById('yur-credit8').value)
+        localStorage.setItem('yur-credit9', document.getElementById('yur-credit9').value)
+    };
+    document.getElementById('chiefs-submit').onclick = () => {
+        localStorage.setItem('yur-chiefs1', document.getElementById('yur-chiefs1').value)
+        localStorage.setItem('yur-chiefs2', document.getElementById('yur-chiefs2').value)
+        localStorage.setItem('yur-chiefs3', document.getElementById('yur-chiefs3').value)
+        localStorage.setItem('yur-chiefs4', document.getElementById('yur-chiefs4').value)
+        localStorage.setItem('yur-chiefs5', document.getElementById('yur-chiefs5').value)
+        localStorage.setItem('yur-chiefs6', document.getElementById('yur-chiefs6').value)
+        localStorage.setItem('yur-chiefs7', document.getElementById('yur-chiefs7').value)
+        localStorage.setItem('yur-chiefs8', document.getElementById('yur-chiefs8').value)
+        localStorage.setItem('yur-chiefs9', document.getElementById('yur-chiefs9').value)
+        localStorage.setItem('yur-chiefs10', document.getElementById('yur-chiefs10').value)
+        localStorage.setItem('yur-chiefs11', document.getElementById('yur-chiefs11').value)
+        localStorage.setItem('yur-chiefs12', document.getElementById('yur-chiefs12').value)
+        localStorage.setItem('yur-chiefs13', document.getElementById('yur-chiefs13').value)
+        localStorage.setItem('yur-chiefs14', document.getElementById('yur-chiefs14').value)
+        localStorage.setItem('yur-chiefs15', document.getElementById('yur-chiefs15').value)
+        localStorage.setItem('yur-chiefs16', document.getElementById('yur-chiefs16').value)
+        localStorage.setItem('yur-chiefs17', document.getElementById('yur-chiefs17').value)
+        localStorage.setItem('yur-chiefs18', document.getElementById('yur-chiefs18').value)
+        localStorage.setItem('yur-chiefs19', document.getElementById('yur-chiefs19').value)
+        localStorage.setItem('yur-chiefs20', document.getElementById('yur-chiefs20').value)
+        localStorage.setItem('yur-chiefs21', document.getElementById('yur-chiefs21').value)
+        localStorage.setItem('yur-chiefs22', document.getElementById('yur-chiefs22').value)
+        localStorage.setItem('yur-chiefs23', document.getElementById('yur-chiefs23').value)
+        localStorage.setItem('yur-chiefs24', document.getElementById('yur-chiefs24').value)
+        localStorage.setItem('yur-chiefs25', document.getElementById('yur-chiefs25').value)
+        localStorage.setItem('yur-chiefs26', document.getElementById('yur-chiefs26').value)
+        localStorage.setItem('yur-chiefs27', document.getElementById('yur-chiefs27').value)
+        localStorage.setItem('yur-chiefs28', document.getElementById('yur-chiefs28').value)
+        localStorage.setItem('yur-chiefs30', document.getElementById('yur-chiefs30').value)
+    };
+    document.getElementById('submit-booker').onclick = () => {
+        localStorage.setItem('yur-booker1', document.getElementById('yur-booker1').value)
+        localStorage.setItem('yur-booker2', document.getElementById('yur-booker2').value)
+        localStorage.setItem('yur-booker3', document.getElementById('yur-booker3').value)
+        localStorage.setItem('yur-booker4', document.getElementById('yur-booker4').value)
+        localStorage.setItem('yur-booker5', document.getElementById('yur-booker5').value)
+        localStorage.setItem('yur-booker6', document.getElementById('yur-booker6').value)
+        localStorage.setItem('yur-booker7', document.getElementById('yur-booker7').value)
+        localStorage.setItem('yur-booker8', document.getElementById('yur-booker8').value)
+        localStorage.setItem('yur-booker9', document.getElementById('yur-booker9').value)
+        localStorage.setItem('yur-booker10', document.getElementById('yur-booker10').value)
+        localStorage.setItem('yur-booker11', document.getElementById('yur-booker11').value)
+        localStorage.setItem('yur-booker12', document.getElementById('yur-booker12').value)
+        localStorage.setItem('yur-booker13', document.getElementById('yur-booker13').value)
+        localStorage.setItem('yur-booker14', document.getElementById('yur-booker14').value)
+        localStorage.setItem('yur-booker15', document.getElementById('yur-booker15').value)
+    };
+    document.getElementById('collateral-submit').onclick = () => {
+        localStorage.setItem('yur-collateral1', document.getElementById('yur-collateral1').value)
+        localStorage.setItem('yur-collateral2', document.getElementById('yur-collateral2').value)
+        localStorage.setItem('yur-collateral3', document.getElementById('yur-collateral3').value)
+        localStorage.setItem('yur-collateral4', document.getElementById('yur-collateral4').value)
+        localStorage.setItem('yur-collateral5', document.getElementById('yur-collateral5').value)
+        localStorage.setItem('yur-collateral6', document.getElementById('yur-collateral6').value)
+        localStorage.setItem('yur-collateral7', document.getElementById('yur-collateral7').value)
+        localStorage.setItem('yur-collateral8', document.getElementById('yur-collateral8').value)
+        localStorage.setItem('yur-collateral9', document.getElementById('yur-collateral9').value)
+        localStorage.setItem('yur-collateral10', document.getElementById('yur-collateral10').value)
+        localStorage.setItem('yur-collateral11', document.getElementById('yur-collateral11').value)
+        localStorage.setItem('yur-collateral12', document.getElementById('yur-collateral12').value)
+    }
+    document.getElementById('surety-submit').onclick = () => {
+        localStorage.setItem('yur-surety1', document.getElementById('yur-surety1').value)
+        localStorage.setItem('yur-surety2', document.getElementById('yur-surety2').value)
+        localStorage.setItem('yur-surety3', document.getElementById('yur-surety3').value)
+        localStorage.setItem('yur-surety4', document.getElementById('yur-surety4').value)
+        localStorage.setItem('yur-surety5', document.getElementById('yur-surety5').value)
+        localStorage.setItem('yur-surety6', document.getElementById('yur-surety6').value)
+        localStorage.setItem('yur-surety7', document.getElementById('yur-surety7').value)
+        localStorage.setItem('yur-surety8', document.getElementById('yur-surety8').value)
+        localStorage.setItem('yur-surety9', document.getElementById('yur-surety9').value)
+        localStorage.setItem('yur-surety10', document.getElementById('yur-surety10').value)
+        localStorage.setItem('yur-surety11', document.getElementById('yur-surety11').value)
+        localStorage.setItem('yur-surety12', document.getElementById('yur-surety12').value)
+        localStorage.setItem('yur-surety13', document.getElementById('yur-surety13').value)
+        localStorage.setItem('yur-surety14', document.getElementById('yur-surety14').value)
+        localStorage.setItem('yur-surety15', document.getElementById('yur-surety15').value)
+
+    }
+    document.getElementById('credit-history-submit').onclick = () => {
+        localStorage.setItem('yur-credit-history1', document.getElementById('yur-credit-history1').value)
+        localStorage.setItem('yur-credit-history2', document.getElementById('yur-credit-history2').value)
+        localStorage.setItem('yur-credit-history3', document.getElementById('yur-credit-history3').value)
+        localStorage.setItem('yur-credit-history4', document.getElementById('yur-credit-history4').value)
+        localStorage.setItem('yur-credit-history5', document.getElementById('yur-credit-history5').value)
+        localStorage.setItem('yur-credit-history6', document.getElementById('yur-credit-history6').value)
+        localStorage.setItem('yur-credit-history7', document.getElementById('yur-credit-history7').value)
+        localStorage.setItem('yur-credit-history8', document.getElementById('yur-credit-history8').value)
+        localStorage.setItem('yur-credit-history9', document.getElementById('yur-credit-history9').value)
+        localStorage.setItem('yur-credit-history10', document.getElementById('yur-credit-history10').value)
+        localStorage.setItem('yur-credit-history11', document.getElementById('yur-credit-history11').value)
+        localStorage.setItem('yur-credit-history12', document.getElementById('yur-credit-history12').value)
+        localStorage.setItem('yur-credit-history13', document.getElementById('yur-credit-history13').value)
+        localStorage.setItem('yur-credit-history14', document.getElementById('yur-credit-history14').value)
+        localStorage.setItem('yur-credit-history15', document.getElementById('yur-credit-history15').value)
+        localStorage.setItem('yur-credit-history16', document.getElementById('yur-credit-history16').value)
+        localStorage.setItem('yur-credit-history17', document.getElementById('yur-credit-history17').value)
+        localStorage.setItem('yur-credit-history18', document.getElementById('yur-credit-history18').value)
+    }
+
 </script>
 </body>
 </html>

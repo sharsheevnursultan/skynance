@@ -122,27 +122,27 @@ $(document).ready(function () {
 
 //new-bid.html work or business tab
 
-$(document).ready(function () {
-    $("#checkbox-business").click(function () {
-        $("#checkbox-business-content").toggle(this.checked);
-    }).triggerHandler('click');
-});
+// $(document).ready(function () {
+//     $("#checkbox-business").click(function () {
+//         $("#checkbox-business-content").toggle(this.checked);
+//     }).triggerHandler('click');
+// });
+//
+// $(document).ready(function () {
+//     $("#checkbox-work").click(function () {
+//         $("#checkbox-work-content").toggle(this.checked);
+//     }).triggerHandler('click');
+// });
 
-$(document).ready(function () {
-    $("#checkbox-work").click(function () {
-        $("#checkbox-work-content").toggle(this.checked);
-    }).triggerHandler('click');
-});
-
-document.getElementById("checkbox_business").addEventListener("click", function () {
-    document.getElementById('checkbox-business-content').style.display = 'block';
-    document.getElementById('checkbox-work-content').style.display = 'none';
-}, false);
-
-document.getElementById("checkbox-work").addEventListener("click", function () {
-    document.querySelector('#checkbox-work-content').style.display = 'block';
-    document.querySelector('#checkbox-business-content').style.display = 'none';
-}, false);
+// document.getElementById("checkbox_business").addEventListener("click", function () {
+//     document.getElementById('checkbox-business-content').style.display = 'block';
+//     document.getElementById('checkbox-work-content').style.display = 'none';
+// }, false);
+//
+// document.getElementById("checkbox-work").addEventListener("click", function () {
+//     document.querySelector('#checkbox-work-content').style.display = 'block';
+//     document.querySelector('#checkbox-business-content').style.display = 'none';
+// }, false);
 
 
 // Скрипт отображает иконку файла после загрузки
@@ -242,12 +242,14 @@ $(document).ready(function () {
         }
 
     });
+
     $("#business-form").validate({
         rules: {
             name1: 'required',
             name2: 'required',
             name3: 'required',
             name4: 'required',
+
 
         },
         validClass: 'is-valid',
@@ -261,12 +263,14 @@ $(document).ready(function () {
         }
 
     });
+
     $("#work-form").validate({
         rules: {
             name1: 'required',
             name2: 'required',
             name3: 'required',
             name4: 'required',
+
 
         },
         validClass: 'is-valid',
@@ -394,5 +398,24 @@ $(document).ready(function () {
 });
 
 
-// chart
+// work business checkbox
+//
+// let businessCheckbox = document.getElementById('checkbox_business');
+// let businessContent = document.querySelectorAll('.business-control')
+// if (businessCheckbox.checked === true) {
+//     businessContent.required = true
+//     console.log(businessContent.required)
+// } else {
+//     businessContent.required = false
+// }
+//
+// let workCheckbox = document.getElementById('checkbox-work');
+// let workContent = document.getElementById('checkbox-work-content');
+// if (workCheckbox.checked === true) {
+//     workContent.required = true
+//     console.log(workContent.required)
+// } else {
+//     workContent.required = false
+// }
+
 
