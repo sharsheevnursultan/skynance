@@ -69,25 +69,6 @@ $(document).ready(function () {
         });
     });
 
-
-//nice select selector
-//     $('.nice-select').niceSelect();
-//     $(window).scroll(function () {
-//         if ($('section').hasClass('first-screen')) {
-//             let height = $(window).scrollTop();
-//             let vheight = $('.first-screen').height();
-//             if (height > vheight) {
-//                 $('header').removeClass('header-bottom');
-//                 $('.first-screen').css('margin-bottom', '80px');
-//             } else {
-//                 /*Если меньше 100px удаляем класс для header*/
-//                 $('header').addClass('header-bottom');
-//                 $('.first-screen').css('margin-bottom', '0');
-//             }
-//         }
-//
-//     });
-
     function mainSlider() {
         $('.ms-item').each(function () {
             $(this).append('<div class="logo"><img src="img/logo-big.png" alt=""></div>');
@@ -99,24 +80,6 @@ $(document).ready(function () {
     }
 
     mainSlider();
-
-    //
-    // $('.cg-checkbox').on('click', function() {
-    //
-    //   if (input.checked === true) {
-    //     if(event.currentTarget.textContent === 'Бизнес') {
-    //         document.querySelectorAll('.my-row.business').forEach(item => {
-    //           item.classList.toggle('hidden')
-    //         })
-    //       }
-    //
-    //       if(event.currentTarget.textContent === 'Работа') {
-    //         document.querySelectorAll('.my-row.work').forEach(item => {
-    //           item.classList.toggle('hidden')
-    //       })
-    //     }
-    //   }
-    // });
 
 });
 
@@ -196,14 +159,17 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 
-    let errorMessage = 'Заполните это поле';
+    let errorMessage = 'Обязательное поле';
 
     $("#main-info-form").validate({
         // wrapper:'span',
         rules: {
             name1: "required",
             name2: "required",
-            number: 'required',
+            number: {
+                required: true,
+                max:100,
+            },
             "date-of-birth": {
                 required: true,
             },
@@ -246,7 +212,9 @@ $(document).ready(function () {
     $("#business-form").validate({
         rules: {
             name1: 'required',
-            name2: 'required',
+            name2: {required:true,
+            max: 100,
+            },
             name3: 'required',
             name4: 'required',
 

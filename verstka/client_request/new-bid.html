@@ -12,26 +12,6 @@
 <div id="preloader">
     <div id="preloader_preload"></div>
 </div>
-<script type="text/javascript">
-    var preloader = document.getElementById("preloader_preload");
-
-    function fadeOutnojquery(el) {
-        el.style.opacity = 1;
-        var interpreloader = setInterval(function () {
-            el.style.opacity = el.style.opacity - 0.05;
-            if (el.style.opacity <= 0.05) {
-                clearInterval(interpreloader);
-                preloader.style.display = "none";
-            }
-        }, 16);
-    }
-
-    window.onload = function () {
-        setTimeout(function () {
-            fadeOutnojquery(preloader);
-        }, 100);
-    };
-</script>
 <header class="header">
     <div class="container flex">
         <div class="logo"><a href="#"><img src="../img/skynance-logo.png" alt=""></a></div>
@@ -116,7 +96,7 @@
                       fill="black"/>
             </svg>
         </i><span>Настройки</span></a></li>
-        <li class="sidebar-menu__item blue active"><a href="new-bid.html"><i>
+        <li class="sidebar-menu__item blue mt-20 active"><a href="new-bid.html"><i>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0)">
                     <path d="M7.39019 4.80996C7.18267 4.80996 7.01439 4.97819 7.01439 5.18575C7.01439 5.64161 6.64352 6.01249 6.18766 6.01249C5.7318 6.01249 5.36092 5.64161 5.36092 5.18575C5.36092 4.72989 5.7318 4.35902 6.18766 4.35902C6.39517 4.35902 6.56345 4.19078 6.56345 3.98322C6.56345 3.77566 6.39522 3.60742 6.18766 3.60742C5.31737 3.60742 4.60938 4.31547 4.60938 5.18571C4.60938 6.05594 5.31742 6.76399 6.18766 6.76399C7.05789 6.76399 7.76594 6.05594 7.76594 5.18571C7.76598 4.97819 7.5977 4.80996 7.39019 4.80996Z"
@@ -446,28 +426,28 @@
                             <span class="row-title">Вид деятельности</span>
                             <span class="input-span">
                                 <input id="business1" type="text" name="name1" class="form-control input"
-                                       placeholder="Текст" required>
+                                       placeholder="Чем вы занимаетесь?" required>
                             </span>
                         </label>
                         <label class="my-row  ">
                             <span class="row-title">Опыт работы</span>
                             <span class="input-span">
-                            <input id="business2" type="text" name="name2" class="form-control input"
-                                   placeholder="Текст" required>
+                            <input id="business2" type="number" name="name2" class="form-control input"
+                                   placeholder="В годах" required>
                             </span>
                         </label>
                         <label class="my-row  ">
-                            <span class="row-title">Адрес расположения работы</span>
+                            <span class="row-title">Количество рабочих</span>
                             <span class="input-span">
-                            <input id="business3" type="text" name="name3" class=" form-control input"
-                                   placeholder="Текст" required>
+                            <input id="business3" type="number" name="name3" class=" form-control input"
+                                   placeholder="Сколько человек работает на вас?" required>
                             </span>
                         </label>
                         <label class="my-row  ">
                             <span class="row-title">Адрес расположения бизнеса</span>
                             <span class="input-span">
                             <input id="business4" type="text" name="name4" class=" form-control input"
-                                   placeholder="Текст" required>
+                                   placeholder="Адрес" required>
                             </span>
                         </label>
                         <div class="d-flex w-100 justify-content-end">
@@ -492,21 +472,21 @@
                         <label class="my-row  ">
                             <span class="row-title">Вид деятельности</span>
                             <span class="input-span">
-                            <input id="work1" type="text" name="name1" class="form-control input" placeholder="Текст">
+                            <input id="work1" type="text" name="name1" class="form-control input" placeholder="Чем вы занимаетесь?">
                        </span>
                         </label>
                         <label class="my-row  ">
                             <span class="row-title">Опыт работы</span>
                             <span class="input-span">
-                                 <input id="work2" type="text" name="name2" class="form-control input"
-                                        placeholder="Текст">
+                                 <input id="work2" type="number" name="name2" class="form-control input"
+                                        placeholder="В годах">
                             </span>
                         </label>
                         <label class="my-row  ">
                             <span class="row-title">Адрес расположения работы</span>
                             <span class="input-span">
                                 <input id="work3" type="text" name="name3" class="form-control input"
-                                       placeholder="Текст">
+                                       placeholder="Адрес">
                             </span>
                         </label>
                         <span class="my-row">
@@ -539,27 +519,30 @@
                         <span class="form-title">Кредит / Кредитная линия</span>
                     </div>
                     <span class="my-row">
-                        <span class="row-title">Предполагаемый кредит / кредитная линия</span>
+                        <span class="row-title">Предполагаемый кредит / <br> кредитная линия</span>
                         <div class="input-span ">
                             <select class="custom-select input-for-select"
                                     id="credit1"
                                     name="credit-line"
                                     required>
-                                <option value="0" disabled selected>-- выбрать --</option>
+                                <option value="не выбрано" disabled selected>-- выбрать --</option>
                                 <option value="Возобновляемый">Возобновляемый</option>
                                 <option value="Невозобновляемый">Невозобновляемый</option>
                             </select>
                         </div>
                     </span>
+
                     <label class="my-row">
+
                         <span class="row-title">Сумма кредита</span>
                         <span class="input-span">
                         <input type="text"
                                id="credit2"
                                class="form-control input"
                                name="name1"
-                               placeholder="Сумма"
+                               placeholder="Сумма в сомах"
                                required>
+
                         </span>
                     </label>
                     <label class="my-row">
@@ -569,7 +552,7 @@
                                id="credit3"
                                class="form-control input"
                                name="name2"
-                               placeholder="Текст"
+                               placeholder="В годах"
                                required></span>
                     </label>
                     <label class="my-row">
@@ -579,7 +562,7 @@
                                id="credit4"
                                class="form-control input"
                                name="name3"
-                               placeholder="Текст"
+                               placeholder="Цель кредита"
                                required>
                         </span>
                     </label>
@@ -590,7 +573,7 @@
                                id="credit5"
                                class="form-control input"
                                name="name4"
-                               placeholder="Сумма"
+                               placeholder="Сумма в сомах"
                                required>
                         </span>
                     </label>
@@ -818,6 +801,7 @@
         </div>
     </div>
 </div>
+<script src="../js/preloader.js"></script>
 <script src="../libs/jquery/jquery-3.3.1.min.js"></script>
 <script src="../js/popper.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>

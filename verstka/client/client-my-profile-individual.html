@@ -13,26 +13,6 @@
 <div id="preloader">
     <div id="preloader_preload"></div>
 </div>
-<script type="text/javascript">
-    var preloader = document.getElementById("preloader_preload");
-
-    function fadeOutnojquery(el) {
-        el.style.opacity = 1;
-        var interpreloader = setInterval(function () {
-            el.style.opacity = el.style.opacity - 0.05;
-            if (el.style.opacity <= 0.05) {
-                clearInterval(interpreloader);
-                preloader.style.display = "none";
-            }
-        }, 16);
-    }
-
-    window.onload = function () {
-        setTimeout(function () {
-            fadeOutnojquery(preloader);
-        }, 100);
-    };
-</script>
 <header class="header">
     <div class="container flex">
         <div class="logo"><a href="#"><img src="../img/skynance-logo.png" alt=""></a></div>
@@ -309,6 +289,7 @@
     </div>
 
 </div>
+<script src="../js/preloader.js"></script>
 <script src="../libs/jquery/jquery-3.3.1.min.js"></script>
 <script src="../js/jquery.validate.min.js"></script>
 <script src="../js/lightbox.min.js"></script>

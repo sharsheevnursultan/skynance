@@ -12,26 +12,6 @@
 <div id="preloader">
     <div id="preloader_preload"></div>
 </div>
-<script type="text/javascript">
-    var preloader = document.getElementById("preloader_preload");
-
-    function fadeOutnojquery(el) {
-        el.style.opacity = 1;
-        var interpreloader = setInterval(function () {
-            el.style.opacity = el.style.opacity - 0.05;
-            if (el.style.opacity <= 0.05) {
-                clearInterval(interpreloader);
-                preloader.style.display = "none";
-            }
-        }, 16);
-    }
-
-    window.onload = function () {
-        setTimeout(function () {
-            fadeOutnojquery(preloader);
-        }, 100);
-    };
-</script>
 <header class="header">
     <div class="container flex">
         <div class="logo"><a href="#"><img src="../img/skynance-logo.png" alt=""></a></div>
@@ -116,7 +96,7 @@
                       fill="black"/>
             </svg>
         </i><span>Настройки</span></a></li>
-        <li class="sidebar-menu__item blue active"><a href="../client_request/new-bid.html"><i>
+        <li class="sidebar-menu__item blue mt-20 active"><a href="../client_request/new-bid.html"><i>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0)">
                     <path d="M7.39019 4.80996C7.18267 4.80996 7.01439 4.97819 7.01439 5.18575C7.01439 5.64161 6.64352 6.01249 6.18766 6.01249C5.7318 6.01249 5.36092 5.64161 5.36092 5.18575C5.36092 4.72989 5.7318 4.35902 6.18766 4.35902C6.39517 4.35902 6.56345 4.19078 6.56345 3.98322C6.56345 3.77566 6.39522 3.60742 6.18766 3.60742C5.31737 3.60742 4.60938 4.31547 4.60938 5.18571C4.60938 6.05594 5.31742 6.76399 6.18766 6.76399C7.05789 6.76399 7.76594 6.05594 7.76594 5.18571C7.76598 4.97819 7.5977 4.80996 7.39019 4.80996Z"
@@ -1323,12 +1303,12 @@
     </div>
 
 </div>
+<script src="../js/preloader.js"></script>
 <script src="../libs/jquery/jquery-3.3.1.min.js"></script>
 <script src="../js/popper.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/jquery.validate.js"></script>
 <script src="../js/jquery.maskedinput.min.js"></script>
-
 <script src="../js/common.js"></script>
 <script>
     $(document).ready(function () {
