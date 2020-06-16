@@ -14,26 +14,6 @@
 <div id="preloader">
     <div id="preloader_preload"></div>
 </div>
-<script type="text/javascript">
-    let preloader = document.getElementById("preloader_preload");
-
-    function fadeOutnojquery(el) {
-        el.style.opacity = 1;
-        let interpreloader = setInterval(function () {
-            el.style.opacity = el.style.opacity - 0.05;
-            if (el.style.opacity <= 0.05) {
-                clearInterval(interpreloader);
-                preloader.style.display = "none";
-            }
-        }, 16);
-    }
-
-    window.onload = function () {
-        setTimeout(function () {
-            fadeOutnojquery(preloader);
-        }, 100);
-    };
-</script>
 <main class="page">
     <header class="header">
         <div class="container-c">
@@ -43,7 +23,7 @@
                         <img src="./images/logo/logo.png" alt="">
                     </div>
                     <div class="header__img">
-                        <img class="w-100 animate__animated animate__zoomIn" src="./images/slides/slide1.png" alt="">
+                        <img class="w-100 animate__animated animate__fadeIn effect" src="./images/slides/slide1.png" alt="">
                     </div>
                 </div>
                 <div class="header__info col-12 col-md-6">
@@ -64,7 +44,7 @@
                         <img src="./images/logo/logo.png" alt="">
                     </div>
                     <div class="header__img">
-                        <img class="w-100 animate__animated animate__zoomIn" src="./images/slides/slide2.png" alt="">
+                        <img class="w-100 animate__animated animate__fadeIn effect" src="./images/slides/slide2.png" alt="">
                     </div>
                 </div>
                 <div class="header__info col-12 col-md-6">
@@ -85,7 +65,7 @@
                         <img src="./images/logo/logo.png" alt="">
                     </div>
                     <div class="header__img">
-                        <img class="w-100 animate__animated animate__zoomIn" src="./images/slides/slide3.png" alt="">
+                        <img class="w-100 animate__animated animate__fadeIn effect" src="./images/slides/slide3.png" alt="">
                     </div>
                 </div>
                 <div class="header__info col-12 col-md-6">
@@ -106,7 +86,7 @@
                         <img src="./images/logo/logo.png" alt="">
                     </div>
                     <div class="header__img">
-                        <img class="w-100 animate__animated animate__zoomIn" src="./images/slides/slide4.png" alt="">
+                        <img class="w-100 animate__animated animate__fadeIn effect" src="./images/slides/slide4.png" alt="">
                     </div>
                 </div>
                 <div class="header__info col-12 col-md-6">
@@ -319,6 +299,7 @@
         </div>
     </footer>
 </main>
+<script src="./js/preloader.js"></script>
 <script src="./js/main.js"></script>
 </body>
 </html>

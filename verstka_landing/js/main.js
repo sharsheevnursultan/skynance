@@ -46,25 +46,34 @@ window.addEventListener('DOMContentLoaded', () => {
             slides[i].style.display = "none";
         }
         slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
         // for (i = 0; i < dots.length; i++) {
         //     dots[i].className = dots[i].className.replace(" active", "");
         // }
-        slides[slideIndex-1].style.display = "flex";
+        slides[slideIndex - 1].style.display = "flex";
         // dots[slideIndex-1].className += " active";
         setTimeout(showSlides, 4000); // Change image every 2 seconds
     }
 
-
+    // let animateOut = () => {
+    //     let my_element = document.getElementsByClassName("effect");
+    //     console.log(my_element);
+    //     for (i = 0; i < my_element.length; i++) {
+    //         my_element[i].classList.replace("animate__fadeIn", "animate__fadeOut");
+    //     }
+    // };
+    // setTimeout(animateOut, 8000);
 
 
     // Valid ********************
 
-    let emailBtn = document.querySelector('.email__btn')
-    let emailInputs = document.querySelectorAll('.email__field')
+    let emailBtn = document.querySelector('.email__btn');
+    let emailInputs = document.querySelectorAll('.email__field');
 
     emailBtn.addEventListener('click', (event) => {
-        event.preventDefault()
+        event.preventDefault();
         emailInputs.forEach(item => {
             if (item.value === '') {
                 item.style.border = '1px solid #fc4949'
@@ -72,79 +81,79 @@ window.addEventListener('DOMContentLoaded', () => {
                 item.style.border = '1px solid #E0E0E0'
             }
         })
-    })
+    });
 
 
     // Menu 
 
-    let navPos, navHeight
+    let navPos, navHeight;
 
     function freshNavPosition() {
-        navPos = document.querySelector('menu').offsetTop
+        navPos = document.querySelector('menu').offsetTop;
         navHeight = document.querySelector('menu').offsetHeight
     }
 
 
-    freshNavPosition()
-    window.addEventListener('resize', freshNavPosition)
+    freshNavPosition();
+    window.addEventListener('resize', freshNavPosition);
 
-    let div = document.createElement('div')
-    div.style.height = navHeight + 'px'
-    document.querySelector('menu').before(div)
-    div.hidden = true
+    let div = document.createElement('div');
+    div.style.height = navHeight + 'px';
+    document.querySelector('menu').before(div);
+    div.hidden = true;
 
     window.addEventListener('scroll', () => {
-        let scrollPos = window.pageYOffset
+        let scrollPos = window.pageYOffset;
 
         if (scrollPos >= navPos) {
-            document.querySelector('menu').classList.add('fixed')
+            document.querySelector('menu').classList.add('fixed');
             div.hidden = false
         } else {
-            document.querySelector('menu').classList.remove('fixed')
+            document.querySelector('menu').classList.remove('fixed');
             div.hidden = true
         }
-    })
+    });
 
     // Burger 
 
-    document.querySelector('.burger').addEventListener('click', toggleShowNav)
+    document.querySelector('.burger').addEventListener('click', toggleShowNav);
 
     function toggleShowNav() {
         let navList = document.querySelector('.nav__list'),
-            navBtn = document.querySelector('.nav__btn')
+            navBtn = document.querySelector('.nav__btn');
 
-        document.querySelector('menu').classList.toggle('active-b')
-        document.querySelector('.burger').classList.toggle('active-b')
-        navBtn.classList.toggle('active-b')
-        navList.classList.toggle('active-b')
+        document.querySelector('menu').classList.toggle('active-b');
+        document.querySelector('.burger').classList.toggle('active-b');
+        navBtn.classList.toggle('active-b');
+        navList.classList.toggle('active-b');
         document.body.classList.toggle('lock')
     }
 
     // Slide *******************
-    let slideImgs = document.querySelectorAll('.partners__img')
-    let btnRight = document.querySelector('.arrow__btn-right')
-    let btnLeft = document.querySelector('.arrow__btn-left')
-    let pos = 0
+    let slideImgs = document.querySelectorAll('.partners__img');
+    let btnRight = document.querySelector('.arrow__btn-right');
+    let btnLeft = document.querySelector('.arrow__btn-left');
+    let pos = 0;
 
-    btnRight.addEventListener('click', () => moveRight(2))
+    btnRight.addEventListener('click', () => moveRight(2));
 
     function moveRight(n) {
         if (pos === (slideImgs.length - n) * 100) {
             return
         }
-        pos += 100
+        pos += 100;
         slideImgs.forEach(item => {
             item.style.transform = `translateX(-${pos}%)`
         })
     }
 
-    btnLeft.addEventListener('click', moveLeft)
+    btnLeft.addEventListener('click', moveLeft);
 
     function moveLeft() {
         if (pos === 0) {
             return
         }
-        pos -= 100
+        pos -= 100;
         slideImgs.forEach(item => {
             item.style.transform = `translateX(-${pos}%)`
         })
@@ -160,4 +169,4 @@ window.addEventListener('DOMContentLoaded', () => {
 
     }
 
-})
+});
